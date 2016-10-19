@@ -146,7 +146,7 @@
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
-.slider input[type-radio]{
+.slider input[type=radio]{
   position: absolute;
   opacity: 1;
 }
