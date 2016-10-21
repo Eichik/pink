@@ -196,10 +196,23 @@ header {
   color: rgb(255, 255, 255);
   display: none;
 }
+<<<<<<< HEAD:src/css/style.css
 #btn-1:checked ~ .slides .slide:nth-child(1) {display: block;}
 #btn-2:checked ~ .slides .slide:nth-child(2) {display: block;}
 #btn-3:checked ~ .slides .slide:nth-child(3) {display: block;}
 .slider input[type-radio] {
+=======
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+.slider input[type=radio]{
+>>>>>>> 810c18de8540bd1799ceab4d97beeb3e066030a2:style/style.css
   position: absolute;
   opacity: 1;
 }
