@@ -4,55 +4,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD:src/index.html
-  <title>index-mobile</title>
-  <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" >
-  <link href="css/style1.css" rel="stylesheet">
+  <title>Pink - путешествия</title>
+  <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-=======
-  <title>Test</title>
-  <link href="font/stylesheet-openSans.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
-  <link href="style/normalize.css" rel="stylesheet">
->>>>>>> 810c18de8540bd1799ceab4d97beeb3e066030a2:index.html
+  <link href="css/style1.css" rel="stylesheet">
+
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7X8VpSpYzQcrywNFhqSDbjrZhzVXxIDB&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li class="menu-item">
-      <h1>
-        <a href="#">
-          <img src="img/logotype-white-mobile.png" alt="logotype-mobile">
-        </a>
-      </h1>
-      <a class="icon-close" href="#">
-        <div class="close-item1"></div>
-        <div class="close-item2"></div>
-      </a>
-      </li>          
-      <li class="menu-item">главная</li>
-      <li class="menu-item">фотографии</li>
-      <li class="menu-item">конкурс</li>
-      <li class="menu-item">html academy</li>
-    </ul>
- <header>
-   <div class="conteiner"> 
-      <h1>
-        <a href="#">
-          <img src="img/logotype-white-mobile.png" alt="logotype-mobile">
-        </a>
-      </h1>
-      <nav>
-        <a class="menu-burger" href="#">
-          <img src="img/menu-burger.png" alt="Show menu">
-        </a>
+  
+ <header class="page-header">
+  <div class="top-header clearfix">
+      <div class="logo">
+        <h1 class="page-title">
+          <a class="click-logo" href="#">
+            <img src="svg/logo-white-mobile.svg" alt="Логотип сайта">
+          </a>
+        </h1> 
+      </div>
+      <nav class="header-navigation">
+        <div class="icon-close" href="#"></div>
+        <div class="menu-burger" href="#">
+          <div class="strip-menu"></div>
+        </div>
+        <ul class="menu">
+          <li class="menu-item">Главная</li>
+          <li class="menu-item">Фотографии</li>
+          <li class="menu-item">Конкурс</li>
+          <li class="menu-item">html academy</li>
+        </ul> 
       </nav>
     </div>
-    
-   
-  </header>
-  <div class="download-app">
-    <div class="conteiner"> 
-    <a href="#">Скачать приложение </a>
+</header>
+<div class="main">
+<div class="download-app">
+  <div class="container"> 
+    <a class="btn-download" href="#">Скачать приложение </a>
     <div class="devices"> 
       <a class="devices-item" href="#">
         <img src="img/apple-logo.png" alt="Download for iOS">
@@ -67,99 +54,123 @@
     <div class="info-download">
       <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8 </span>
     </div>
-    </div>
   </div>
-  <h2> 
-    <div class="wrap1">
-      <span> Устали от серости мегаполиса?</span>
-    </div>
-    <div class="wrap2">
-      <span> Нам есть, что Вам предложить!</span>
-    </div>
-  </h2>
-  
+</div>
+
+<h2> 
+  <div>
+    <span> Устали от серости мегаполиса?</span>
+  </div>
+  <div>
+    <span> Нам есть, что Вам предложить!</span>
+  </div>
+</h2>
+<div class="wrap">
+  <div class="container"> 
     <section>
-      <span> Поднимает настроение</span>
+      <h3> Поднимает настроение</h3>
       <span>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</span>      
     </section>
-    <section class="wrap3">
-      <span>Меняет мир вокруг</span>
+    <section>
+      <h3>Меняет мир вокруг</h3>
       <span>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>      
     </section>
-    <section class="wrap3">
-      <span>Заводит новых друзей</span>
+    <section >
+      <h3>Заводит новых друзей</h3>
       <span>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span>      
     </section>
-  
+  </div>  
+</div>
+<div class="sl-review">
+  <input type="radio" id="btn-1rev" name="tumbler" checked>
+  <input type="radio" id="btn-2rev" name="tumbler" >
+  <input type="radio" id="btn-3rev" name="tumbler" >
+  <div class="sl-review-controlles">
+    <label for="btn-1rev"> </label>
+    <label for="btn-2rev"> </label>     
+    <label for="btn-3rev"> </label> 
+  </div>
+  <div class="reviews">
   <div class="review"> 
       <span>Николай Петров</span>
       <span>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
   </div>
-  <div class="price"> 
+  <div class="review"> 
+      <span>Петр Иванов</span>
+      <span>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
+  </div>
+  <div class="review"> 
+      <span>Василий Николаев</span>
+      <span>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
+  </div>
+  </div>
+</div>
+<div class="price"> 
+  <div class="container">
     <div class="slider"> 
-      <input type="radio" id="btn-1" name="toggle">
-      <input type="radio" id="btn-2" name="toggle" checked>
-      <input type="radio" id="btn-3" name="toggle">      
+      <input class="btn-item" type="radio" id="btn-1pr" name="toggle">
+      <input class="btn-item" type="radio" id="btn-2pr" name="toggle" checked>
+      <input class="btn-item" type="radio" id="btn-3pr" name="toggle">      
       <div class="slider-controlles">
-        <label for="btn-1"> </label>
-        <label for="btn-2"> </label>     
-        <label for="btn-3"> </label>                  
+        <label for="btn-1pr"> </label>
+        <label for="btn-2pr"> </label>     
+        <label for="btn-3pr"> </label>                  
       </div>
        <div  class="slides">
       <div class="slide">
-        <div class="slide-title">
+        <div class="slide-title clearfix">
           <span>БАЗА</span>
           <span>1,99 USD</span>          
         </div>
-        <div class="slide-item">
+        <div class="slide-item  clearfix">
           <span>РОЗОВЫЙ ФИЛЬТР</span>
           <div class="yes"> </div>
         </div>
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>СМАЙЛИКИ</span>
           <div class="no2"> </div> 
           <div class="no1"> </div> 
         </div>    
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>КОММЕНТАРИИ</span>
           <div class="no2"> </div> 
           <div class="no1"> </div> 
         </div>           
       </div>
       <div class="slide">
-        <div class="slide-title">
+        <div class="slide-title clearfix">
           <img src="./img/hit.png" alt="Hit">
           <span>СТАНДАРТ</span>
           <span>3,99 USD</span>          
         </div>
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>РОЗОВЫЙ ФИЛЬТР</span>
           <div class="yes"> </div>
         </div>
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>СМАЙЛИКИ</span>
           <div class="yes"> </div>
         </div>    
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>КОММЕНТАРИИ</span>
           <div class="no2"> </div> 
           <div class="no1"> </div>         
         </div>            
       </div>
       <div class="slide">
-        <div class="slide-title">
+        <div class="slide-title clearfix">
           <span>АНЛИМ</span>
           <span>9,99 USD</span>          
         </div>
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>РОЗОВЫЙ ФИЛЬТР</span>
           <div class="yes"> </div>
         </div>
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>СМАЙЛИКИ</span>
           <div class="yes"> </div>
         </div>    
-        <div class="slide-item">
+        <div class="slide-item clearfix">
           <span>КОММЕНТАРИИ</span>
           <div class="yes"> </div>
         </div>           
@@ -167,23 +178,25 @@
     </div>
     </div>
   </div>
-  <div class="lookfor-us">
-    <div class="contact">
-      <span>ОСТАЛИСЬ ВОПРОСЫ?</span>
-      <span> СВЯЖИТЕСЬ С НАМИ! </span>
-      <span>Звоните:</span>
-      <span>+7(812)555-66-66</span>
-      <span>Пишите:</span>
-      <span>mail@htmlacademy.ru</span>
-      <span>Приезжайте в гости:</span>
-      <span>ул. Большая</span>
-      <span>Конюшенная, 19/8</span>
+</div>
+<div class="lookfor-us">
+  <div class="contact">
+    <div class="container">
+      <h3 class="contact-title">
+        <span>Остались вопросы?</span>
+        <span>Свяжитесь с нами!</span>
+      </h3>
+      <span class="contact-tel-title">Звоните:</span>
+      <span class="contact-tel">+7(812)555-66-66</span>
+      <span class="contact-mail-title">Пишите:</span>
+      <span class="contact-mail">mail@htmlacademy.ru</span>
+      <span class="contact-adress-title">Приезжайте в гости:</span>
+      <span class="contact-adress">ул. Большая</span>
+      <span class="contact-adress">Конюшенная, 19/8</span>
     </div>
-    <div class="map">
-      <a href="https://yandex.ru/maps/?um=constructor:su2sx-HxYW5pdPMXB4knjUfsvpnAUpuM&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=su2sx-HxYW5pdPMXB4knjUfsvpnAUpuM&amp;width=320&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
-      <div class="icon-triangle"></div>
-    </div>
-  
   </div>
+  <div id="mymap" class="map"></div>
+</div>
+</div>
 </body>
 </html>
