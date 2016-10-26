@@ -21,8 +21,7 @@
 
 .top-header {
   padding: 20px 20px;
-  background-color:#000;
-  opacity: 0.45;
+  background-color:rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -114,7 +113,11 @@
   text-align: center;
 }
 
-.menu li {
+
+
+.menu .menu-item {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
   font-size: 18px;
   line-height: 32px;
   font-family: "Open Sans";
@@ -122,11 +125,6 @@
   font-weight: bold; 
   text-transform: uppercase;
   padding: 14px 0;
-}
-
-.menu .menu-item {
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #485461;
 }
 
 .icon-close {
@@ -210,39 +208,39 @@
   padding: 0 20px 40px;
 }
 
-h2 {
+.title {
   margin: 45px 50px 30px;
   color: #283645;
   font-weight: normal;
 }
 
-h2>div {
+.title-item {
   margin-bottom: 40px;
   text-align: center;
-}
-
- h2>div>span {
   font-size: 24px;
   font-family: "Open Sans";
   color: rgb(40, 54, 69);
 }
 
-section {
+
+ .dignity {
   text-align: center;
 }
 
-section>h3 {
+.dignity-title {
   font-weight: bold;
   font-size: 18px;
   margin-top: 40px;
+  
 }
 
-section>span{
+.dignity-content{
   font-family: "Open Sans";
   font-size: 14px;
 }
 
 .wrap {
+  position: relative;
   background: #f2f2f2 url(../img/iphone.png) no-repeat 50% 510px;
   height: 745px;
   padding-top: 30px;
@@ -267,7 +265,7 @@ section>span{
   z-index: 900;
 }
 
-.sl-review-controlles label {
+.for-btn {
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -278,16 +276,7 @@ section>span{
   border:3px solid #f2f2f2
 }
 
-.review {
-  width: 100%;
-  height: 280px;
-  line-height: 30px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  display: none;
-  font-size: 14px;
-  text-align: center;
-}
+
 
 #btn-1rev:checked ~ .reviews .review:nth-child(1) {
   display: block;
@@ -299,10 +288,6 @@ section>span{
   display: block;
 }
 
-.sl-review input[type=radio] {
-  position: absolute;
-  opacity: 0;
-}
 
 #btn-1rev:checked ~ .sl-review-controlles label[for="btn-1rev"],
 #btn-2rev:checked ~ .sl-review-controlles label[for="btn-2rev"],
@@ -318,17 +303,17 @@ section>span{
   color: rgb(0, 0, 0);
   line-height: 30px;
   text-align: center; 
+  display: none;
 }
 
-.review span {
+.title-review {
   display: block;
-}
-
-.review span:first-child {
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 20px;
 }
+
+
 
 .price {
   position: relative;
@@ -336,7 +321,8 @@ section>span{
   padding: 100px 0 100px;
 }
 
-.price:before{
+.price:before,
+.wrap:before {
   content: "";
   background: url(../svg/triangle-white.svg);
   position: absolute;
@@ -361,16 +347,7 @@ section>span{
   z-index: 1000;
 }
 
-.slider-controlles label {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 8px;
-  background:#b5b9be;
-  vertical-align: top;
-  border-radius: 50%;
-  border:3px solid #f2f2f2
-}
+
 
 .slide {
   border:2px solid #e5e5e5;
@@ -403,7 +380,7 @@ section>span{
   text-align: center;
 }
 
-.slide-title img {
+.sale{
   position: absolute;
   left:0;
   top:0;
@@ -412,14 +389,15 @@ section>span{
 
 .slide-title span {
   display: block;
-}
-.slide-title span:nth-child(1) {
+}  
+
+.slide-name {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
 }
 
-.slide-title span:nth-child(2) {
+.package-price {
   font-size: 24px;  
   padding-bottom: 17px;
 }
@@ -467,7 +445,7 @@ section>span{
   border-bottom: 2px solid #e5e5e5;
 }
 
-.slide-item span {
+.service {
   font-size: 14px;
   line-height: 60px;
   color: #000;
@@ -480,14 +458,14 @@ section>span{
   border: 3px #283645 solid;
 }
 
-.slide:nth-child(2) .slide-title span:nth-child(2) {
+.package-name {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
   padding-bottom: 0px;
 }
 
-.slide:nth-child(2) .slide-title span:nth-child(3) {
+.package-price {
   font-size: 24px;  
   padding-bottom: 17px;
 }
@@ -508,8 +486,7 @@ section>span{
 .contact-title {
   font-size: 24px;
   color: rgb(0, 0, 0);
-  line-height: 28px;
-  text-transform: uppercase;
+  line-height: 36px;
   font-weight: normal;
 }
 
@@ -558,7 +535,7 @@ section>span{
   background-size: 100% 100%;
   z-index: 100;
 }
-
+/*
 .map:after{
   content: "";
   position: absolute;
@@ -570,5 +547,5 @@ section>span{
   background-image: url(../svg/map-marker.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+}*/
 
