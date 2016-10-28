@@ -1,33 +1,108 @@
-.conteiner {
+.container {
   padding: 0 20px;
 }
-header {
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.page-header {
   width: 100%;
   height: 440px;
   background: url(../img/iphone-hand.png) no-repeat 100% 170px,
               url(../img/bg-1.jpg) no-repeat 100% 100%;
-  padding-top: 20px;
 }
-.conteiner h1 {
+
+.top-header {
+  padding: 20px 20px;
+  background-color:rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.show-navigation .top-header {
+  background: #283645;
+  opacity: 1;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+.show-navigation .menu {
+  display: block;
+  border-top: 1px solid #000;
+}
+
+.show-navigation .menu-burger {
+  display: none;
+}
+
+.show-navigation .icon-close {
   display: inline-block;
-  margin: 0;
-  height: 22px;
-  font-size: 0;
+  position: absolute;
+  top:20px;
+  right: 0;
 }
-.conteiner h1>a {
+
+.show-navigation .logo {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.page-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.click-logo {
   text-decoration: none;
   display: inline-block;
   height: 22px;
   font-size: 0;  
 }
-.conteiner>nav {
-  float:right;
+
+.header-navigation {
+  display: inline-block;
 }
+
 .menu-burger {
   display: inline-block;
   height: 24px;
   width: 50px;
+  opacity: 1;
+  position: absolute;
+  top:20px;
+  right: 20px;
 }
+
+.strip-menu {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.menu-burger:after,
+.menu-burger:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 1;
+}
+
 .menu  {
   background: #283645;
   display: none;  
@@ -37,7 +112,12 @@ header {
   margin: 0;
   text-align: center;
 }
-.menu li {
+
+
+
+.menu .menu-item {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
   font-size: 18px;
   line-height: 32px;
   font-family: "Open Sans";
@@ -46,124 +126,216 @@ header {
   text-transform: uppercase;
   padding: 14px 0;
 }
-.menu .menu-item {
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #485461;
-}
-.menu .menu-item:first-child {
-  text-align: left;
-  padding:19px 0;
-  border-top: none;  
-}
-.menu .menu-item:first-child>h1 {
-  display: inline-block;
-  margin: 0;
-  height: 22px;
-  font-size: 0;
-  margin-left: 20px;
-}
-.menu .menu-item:first-child .icon-close {
-  display: inline-block;
+
+.icon-close {
+  display: none;
   float: right;
-  height: 26px;
-  width: 30px;
-  margin-right: 20px;  
+  height: 20px;
+  width: 20px; 
+  position: relative;
 }
-.close-item1 {
+
+.icon-close::before {
+  content: "";
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-bottom: 4px solid #fff;
-  border-right: 4px solid #fff;
+  width: 24px;
+  height: 4px;
+  background: #fff;
   transform: rotate(-45deg);
-  margin-right: -3px;
+  position: absolute;
+  top: 8px;
+  left: -20px;
 }
-.close-item2 {
+
+.icon-close::after {
+  content: "";
   display: inline-block;  
-  width: 12px;
-  height: 12px;
-  border-bottom: 4px solid #fff;
-  border-left: 4px solid #fff;
+  width: 24px;
+  height: 4px;
+  background: #fff;
   transform: rotate(45deg);
-  margin-right: -7px;
+  font-size: 0;
+  position: absolute;
+  top: 8px;
+  left: -20px;
 }
+
 .download-app {
   text-align: center;
   width: 100%;
-  height: 270px;
   background: #1d2631;
-}
-.download-app>a {
-  display: block;
-  width: 280px;
-  height: 55px;
-  padding: 28px 20px;
-  border-radius: 25px;
+  padding-top: 28px;
 }
 
-.devices img:first-child {padding-right: 32px;}
-.devices img:nth-child(2) {padding-right: 24px;}
-.download-app .info-download {
-  margin: 20px 36px 0; 
+.btn-download {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 32px;
+  border: 3px solid #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color:#fff;
+  margin-bottom: 32px;
+  padding: 20px 30px;
+}
+
+.devices {
+  margin-bottom: 20px;
+}
+
+.devices-item {
+  display: inline-block;
+  width: 47px;
+  height: 56px;
+  padding-right: 32px;
+}
+
+.devices-item {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+.devices-item {
+  display: inline-block;
+}
+
+.info-download {
   font-size: 14px;
   font-family: "Open Sans";
   color: #fff;
   line-height: 24px;
+  padding: 0 20px 40px;
 }
- .wrap1, .wrap2 {
+
+.slogan-features {
+  margin: 45px 50px 30px;
+  color: #283645;
+  font-weight: normal;
+}
+
+.slogan-feature {
+  margin-bottom: 40px;
   text-align: center;
   font-size: 24px;
   font-family: "Open Sans";
   color: rgb(40, 54, 69);
 }
-.information-white {
-  margin: 45px 50px 30px;
-  color: #283645;
-}
-.wrap1 {margin-bottom: 40px;}
-.information-grey {
-  height: 735px;
-  padding: 55px 24px 0;
+
+
+ .dignity {
   text-align: center;
-  background-image: url(../img/bg-2.jpg);
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(0, 0, 0);
-  line-height: 24px;
 }
-.information-grey span {display: block;}
-.wrap3 span:first-child {
+
+.dignity-title {
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 10px;
+  margin-top: 40px;
+  
 }
-.wrap3 {padding-top: 30px;}
-.review {
+
+.dignity-content{
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.wrap {
+  position: relative;
+  background: #f2f2f2 url(../img/iphone.png) no-repeat 50% 510px;
+  height: 745px;
+  padding-top: 30px;
+  
+}
+
+.sl-review {
+  position: relative;
+  margin: 0 auto;
   padding: 50px 20px 65px;
+  margin-bottom: 90px;
+}
+
+.sl-review-controlles {
+  position: absolute;
+  width: 124px;
+  height: 10px;
+  left:50%;
+  margin-left: -62px;
+  bottom: 45px;
+  text-align: center;
+  z-index: 900;
+}
+
+.for-btn {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  background:#b5b9be;
+  vertical-align: top;
+  border-radius: 50%;
+  border:3px solid #f2f2f2
+}
+
+
+
+#btn-1rev:checked ~ .reviews .review:nth-child(1) {
+  display: block;
+}
+#btn-2rev:checked ~ .reviews .review:nth-child(2) {
+  display: block;
+}
+#btn-3rev:checked ~ .reviews .review:nth-child(3) {
+  display: block;
+}
+
+
+#btn-1rev:checked ~ .sl-review-controlles label[for="btn-1rev"],
+#btn-2rev:checked ~ .sl-review-controlles label[for="btn-2rev"],
+#btn-3rev:checked ~ .sl-review-controlles label[for="btn-3rev"] {
+  background: #fff;
+  border: 3px #283645 solid;
+}
+
+.review {
   background-color: #fff;
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(0, 0, 0);
   line-height: 30px;
   text-align: center; 
+  display: none;
 }
-.review span {display: block;}
-.review span:first-child {
+
+.title-review {
+  display: block;
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 20px;
 }
+
+
+
 .price {
-  height: 383px;
-  background-image: url(../img/bg-3.jpg);
-  padding-top: 90px;
-}
-.slider {
   position: relative;
-  width: 280px;
-  height: 365px;
-  margin: 0 auto;
+  background: #f2f2f2;
+  padding: 100px 0 100px;
 }
+
+.price:before,
+.wrap:before {
+  content: "";
+  background: url(../svg/triangle-white.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
 .slider-controlles {
   position: absolute;
   width: 124px;
@@ -174,75 +346,69 @@ header {
   text-align: center;
   z-index: 1000;
 }
-.slider-controlles label {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 8px;
-  background:#b5b9be;
-  vertical-align: top;
-  border-radius: 50%;
-  border:3px solid #f2f2f2
-}
+
+
+
 .slide {
-  position: absolute;
-  left:0;
-  top:0;
-  width: 100%;
-  height: 280px;
   border:2px solid #e5e5e5;
   line-height: 30px;
   font-family: "Open Sans";
   color: rgb(255, 255, 255);
   display: none;
 }
-<<<<<<< HEAD:src/css/style.css
-#btn-1:checked ~ .slides .slide:nth-child(1) {display: block;}
-#btn-2:checked ~ .slides .slide:nth-child(2) {display: block;}
-#btn-3:checked ~ .slides .slide:nth-child(3) {display: block;}
-.slider input[type-radio] {
-=======
-#btn-1:checked ~ .slides .slide:nth-child(1) {
+
+#btn-1pr:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
-#btn-2:checked ~ .slides .slide:nth-child(2) {
+
+#btn-2pr:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
-#btn-3:checked ~ .slides .slide:nth-child(3) {
+
+#btn-3pr:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
-.slider input[type=radio]{
->>>>>>> 810c18de8540bd1799ceab4d97beeb3e066030a2:style/style.css
+
+.btn-item {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
 }
+
 .slide-title {
   position: relative;
   background: #283645;
   text-align: center;
 }
-.slide-title img {
+
+.sale{
   position: absolute;
   left:0;
   top:0;
   z-index: 10;
 }
-.slide-title span {display: block;}
-.slide-title span:nth-child(1) {
+
+.slide-title span {
+  display: block;
+}  
+
+.slide-name {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
 }
-.slide-title span:nth-child(2) {
+
+.package-price {
   font-size: 24px;  
   padding-bottom: 17px;
 }
+
 .slide-item {
   height: 60px;
   padding:0 15px;
   background: #fff;
 }
-.slide-item .yes {
+
+.service-yes {
   float: right;
   width: 31px;
   height: 16px;
@@ -250,8 +416,17 @@ header {
   border-left: 4px solid #3dc644;
   transform: rotate(-45deg);
   margin-top: 14px;
+  overflow: hidden;
 }
-.slide-item .no1 {
+
+.service-no {
+  float:right;
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.service-no:before {
   float: right;
   width: 19px;
   height: 19px;
@@ -260,8 +435,14 @@ header {
   transform: rotate(-45deg);
   margin-top: 14px;
   margin-right: 4px;
+  position: absolute;
+  content: "";
+  left: 60px;
+  top: -10px;
 }
-.slide-item .no2 {
+
+.service-no:after {
+  content: "";
   float: right;
   width: 19px;
   height: 19px;
@@ -270,65 +451,97 @@ header {
   transform: rotate(45deg);
   margin-top: 14px;
   margin-right: -10px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
 }
+
 .slide-item:nth-child(3),
 .slide-item:nth-child(2) {
   border-bottom: 2px solid #e5e5e5;
 }
-.slide-item span {
+
+.service {
   font-size: 14px;
   line-height: 60px;
   color: #000;
 }
-#btn-1:checked ~ .slider-controlles label[for="btn-1"],
-#btn-2:checked ~ .slider-controlles label[for="btn-2"],
-#btn-3:checked ~ .slider-controlles label[for="btn-3"] {
+
+#btn-1pr:checked ~ .slider-controlles label[for="btn-1pr"],
+#btn-2pr:checked ~ .slider-controlles label[for="btn-2pr"],
+#btn-3pr:checked ~ .slider-controlles label[for="btn-3pr"] {
   background: #fff;
   border: 3px #283645 solid;
 }
-.slide:nth-child(2) .slide-title span:nth-child(2) {
+
+.package-name {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
   padding-bottom: 0px;
 }
-.slide:nth-child(2) .slide-title span:nth-child(3) {
+
+.package-price {
   font-size: 24px;  
   padding-bottom: 17px;
 }
-.contact {padding: 0 30px;}
+
 .contact span {
   display: block;
   font-family: "Open Sans";
 }
+
 .lookfor-us {
   text-align: center;
   padding-top: 60px;
 }
-.contact span:first-child,
-.contact span:nth-child(2) {
+
+.contact {
+  padding-bottom: 40px;
+}
+.contact-title {
   font-size: 24px;
   color: rgb(0, 0, 0);
-  line-height: 24px;
+  line-height: 36px;
+  font-weight: normal;
 }
-.contact span:nth-child(2n+3) {
+
+.contact-tel-title,
+.contact-mail-title,
+.contact-adress-title {
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 10px;
   line-height: 18px;
 }
-.contact span:nth-child(9),
-.contact span:nth-child(2n+4) {
+
+.contact-adress,
+.contact-mail,
+.contact-tel {
   color: #d22856;
   padding-bottom: 24px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
 }
-.contact span:nth-child(2) {padding-bottom: 30px;}
-.contact span:nth-child(8) {padding-bottom: 0;}
-.map {position: relative;}
-.icon-triangle {
+
+
+.contact-title span:nth-child {
+  padding-bottom: 30px;
+}
+
+.contact-adress {
+  padding-bottom: 0;
+}
+
+.map {
+  position: relative;
+  background: url(../img/map.jpg) 100% 100%; 
+  height: 200px;
+}
+
+.map:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -338,31 +551,21 @@ header {
   background-image: url(../svg/bg-white-mask.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  z-index: 100;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+.map:after{
+  content: "";
+  position: absolute;
+  top: 145px;
+  left: 170px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../svg/map-marker.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}*/
 
 
 
