@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<!-- <html lang="ru"> - указываем язык для браузера  -->
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pink - путешествия</title>
+  <!-- Если подключаешь внешние шрифты, то подключай из гугла, т.е. google fonts,
+   т.к. он всегда стабильно работает и редко падает, а это русский сайтик может я вообще хз-->
   <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -12,115 +15,148 @@
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7X8VpSpYzQcrywNFhqSDbjrZhzVXxIDB&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
 </head>
 <body>
-  
- <header class="page-header">
+
+<header class="page-header show-navigation">
+   <!-- тут не нужен clearfix, т.к. блоки внутри контейнера не флоатные у тебя -->
   <div class="top-header clearfix">
+    <!-- Разберись какие отступы ты используешь: 2 или 4 пробела. Код должен быть единообразным -->
       <div class="logo">
+        <!--
+        тут лучше класс назвать logo-title, т.к. на других старницах page-title может быть не
+        логотипом
+        -->
         <h1 class="page-title">
+          <!-- по семантике, в h1 должен быть текст, а дальше в css его скрываем
+        техники скрытия: https://css-tricks.com/the-image-replacement-museum/ -->
+          <!-- имея класса лучше сделать logo-link -->
           <a class="click-logo" href="#">
+            <!-- картинке лучше добавить класс, т.к. мы в других версиях будем цепляться к нему -->
             <img src="svg/logo-white-mobile.svg" alt="Логотип сайта">
           </a>
-        </h1> 
+        </h1>
       </div>
       <nav class="header-navigation">
+        <!-- внутри пишем текст "Закрыть меню" и прячем его в css как было выше через
+       https://css-tricks.com/the-image-replacement-museum/ -->
+       <!-- у div нет href атрибута -->
         <div class="icon-close" href="#"></div>
+        <!-- тоже пишем текст "Показать меню" и прячем его -->
+        <!-- у div нет href атрибута -->
         <div class="menu-burger" href="#">
           <div class="strip-menu"></div>
         </div>
+
         <ul class="menu">
+          <!-- каждый элемент списка - это ссылка на раздел сайта, оберни текст в ссылку -->
           <li class="menu-item">Главная</li>
           <li class="menu-item">Фотографии</li>
           <li class="menu-item">Конкурс</li>
           <li class="menu-item">html academy</li>
-        </ul> 
+        </ul>
       </nav>
     </div>
 </header>
+<!-- даём класс, page-main -->
 <main>
 <div class="download-app">
-  <div class="container"> 
-    <a class="btn-download" href="#">Скачать приложение </a>
-    <div class="devices"> 
+  <div class="container">
+    <a class="btn-download" href="#">Скачать приложение</a>
+    <div class="devices">
+      <!--класс device-link -->
       <a class="devices-item" href="#">
+        <!-- картинки имеют прозрачность на разных версиях, поэтому добавляем класс -->
         <img src="img/apple-logo.png" alt="Download for iOS">
       </a>
       <a class="devices-item" href="#">
         <img src="img/android-logo.png" alt="Download for Android">
       </a>
       <a class="devices-item" href="#">
-        <img src="img/microsoft-logo.png" alt="Download for Windows Phone">      
+        <img src="img/microsoft-logo.png" alt="Download for Windows Phone">
       </a>
     </div>
     <div class="info-download">
+      <!-- лучше параграф и класс дать -->
       <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8 </span>
     </div>
   </div>
 </div>
 
-<h2 class="slogan-features"> 
+<h2 class="slogan-features">
+  <!-- классы перемещаем в span элементы, а дивы удаляем вообще -->
   <div class="slogan-feature">
-    <span> Устали от серости мегаполиса?</span>
+    <span>Устали от серости мегаполиса?</span>
   </div>
   <div class="slogan-feature">
-    <span> Нам есть, что Вам предложить!</span>
+    <span>Нам есть, что Вам предложить!</span>
   </div>
 </h2>
+<!-- вместо wrap лучше дать dignitys, какие фичи/преимущества у приложения -->
 <div class="wrap">
-  <div class="container"> 
+  <div class="container">
     <section class="dignity">
       <h3 class="dignity-title"> Поднимает настроение</h3>
-      <span class="dignity-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</span>      
+      <!-- лучше параграф -->
+      <span class="dignity-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</span>
     </section>
     <section class="dignity">
       <h3 class="dignity-title">Меняет мир вокруг</h3>
-      <span class="dignity-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>      
+      <span class="dignity-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>
     </section>
     <section class="dignity">
       <h3 class="dignity-title">Заводит новых друзей</h3>
-      <span class="dignity-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span>      
+      <span class="dignity-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span>
     </section>
-  </div>  
+  </div>
 </div>
+
+<!-- sl - это сокращённо slider? если да, то лучше напиши полностью slider-review -->
 <div class="sl-review">
   <input class="btn-item" type="radio" id="btn-1rev" name="tumbler" checked>
-  <input class="btn-item"type="radio" id="btn-2rev" name="tumbler" >
-  <input class="btn-item"type="radio" id="btn-3rev" name="tumbler" >
+  <input class="btn-item" type="radio" id="btn-2rev" name="tumbler">
+  <input class="btn-item" type="radio" id="btn-3rev" name="tumbler">
+  <!-- slider-review-controls или slider-controls -->
   <div class="sl-review-controlles">
     <label class="for-btn" for="btn-1rev"> </label>
-    <label  class="for-btn" for="btn-2rev"> </label>     
-    <label  class="for-btn" for="btn-3rev"> </label> 
+    <label  class="for-btn" for="btn-2rev"> </label>
+    <label  class="for-btn" for="btn-3rev"> </label>
   </div>
   <div class="reviews">
-    <div class="review"> 
+    <div class="review">
+        <!-- лучше review-author -->
         <span class="title-review">Николай Петров</span>
+        <!-- лучше review-text или review-content и это параграф-->
         <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
     </div>
-    <div class="review"> 
+    <div class="review">
         <span class="title-review">Петр Иванов</span>
         <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
     </div>
-    <div class="review"> 
+    <div class="review">
         <span class="title-review">Василий Николаев</span>
         <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
     </div>
   </div>
 </div>
-<div class="price"> 
+<div class="price">
   <div class="container">
-    <div class="slider"> 
+    <div class="slider">
       <input class="btn-item" type="radio" id="btn-1pr" name="toggle">
       <input class="btn-item" type="radio" id="btn-2pr" name="toggle" checked>
-      <input class="btn-item" type="radio" id="btn-3pr" name="toggle">      
+      <input class="btn-item" type="radio" id="btn-3pr" name="toggle">
+      <!-- slider-controls -->
       <div class="slider-controlles">
         <label class="for-btn" for="btn-1pr"> </label>
-        <label class="for-btn" for="btn-2pr"> </label>     
-        <label class="for-btn" for="btn-3pr"> </label>                  
+        <label class="for-btn" for="btn-2pr"> </label>
+        <label class="for-btn" for="btn-3pr"> </label>
       </div>
-       <div  class="slides">
+      <div class="slides">
       <div class="slide">
+        <!-- clearfix не нужен, т.к. не флоаты -->
         <div class="slide-title clearfix">
+          <!-- пишем 'База', а uppercase делаем в css -->
           <span class="package-name">БАЗА</span>
-          <span class="package-price">1,99 USD</span>          
+          <!-- тоже самое, что и выше -->
+          <span class="package-price">1,99 USD</span>
         </div>
         <div class="slide-item  clearfix">
           <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
@@ -128,18 +164,19 @@
         </div>
         <div class="slide-item clearfix">
           <span class="service">СМАЙЛИКИ</span>
-          <div class="service-no">не включено</div> 
-        </div>    
+          <div class="service-no">не включено</div>
+        </div>
         <div class="slide-item clearfix">
           <span class="service">КОММЕНТАРИИ</span>
           <div class="service-no">не включено</div>
-        </div>           
+        </div>
       </div>
       <div class="slide">
         <div class="slide-title clearfix">
+          <!-- sale-image или sale-img -->
           <img class="sale" src="./img/hit.png" alt="Выгодное предложение">
           <span class="package-name">СТАНДАРТ</span>
-          <span class="package-price">3,99 USD</span>          
+          <span class="package-price">3,99 USD</span>
         </div>
         <div class="slide-item clearfix">
           <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
@@ -147,17 +184,17 @@
         </div>
         <div class="slide-item clearfix">
           <span class="service">СМАЙЛИКИ</span>
-          <div class="service-yes"> включено</div>
-        </div>    
+          <div class="service-yes">включено</div>
+        </div>
         <div class="slide-item clearfix">
           <span class="service">КОММЕНТАРИИ</span>
           <div class="service-no">не включено</div>
-        </div>            
+        </div>
       </div>
       <div class="slide">
         <div class="slide-title clearfix">
           <span class="package-name">АНЛИМ</span>
-          <span class="package-price">9,99 USD</span>          
+          <span class="package-price">9,99 USD</span>
         </div>
         <div class="slide-item clearfix">
           <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
@@ -166,32 +203,47 @@
         <div class="slide-item clearfix">
           <span class="service">СМАЙЛИКИ</span>
           <div class="service-yes"> включено</div>
-        </div>    
+        </div>
         <div class="slide-item clearfix">
           <span class="service">КОММЕНТАРИИ</span>
           <div class="service-yes"> включено</div>
-        </div>           
+        </div>
       </div>
     </div>
     </div>
   </div>
 </div>
 <div class="lookfor-us">
+  <!-- contacts -->
   <div class="contact">
     <div class="container">
+      <!-- h2.contacts-title -->
       <h3 class="contact-title">
+        <!-- если используем спаны, то даём класс -->
         <span>Остались вопросы?</span>
         <span>Свяжитесь с нами!</span>
       </h3>
+      <!-- блоки одинаковые по стилю и структуре, так что можно выдать один общий
+       класс class="contact" -->
       <section class="tel">
+        <!-- тоже самое, что и сверху class="contact-title"
+        и лучше сделать это элемент h3 -->
         <span class="contact-tel-title">Звоните:</span>
+        <!-- пример как должно было быть для телефона:
+        <a class="contact-tel" href="tel:+1234567890">+1234567890</ a> -->
         <span class="contact-tel">+7(812)555-66-66</span>
       </section>
-      <section class="mail">  
+      <!-- class="contact" -->
+      <section class="mail">
+        <!-- class="contact-title" -->
         <span class="contact-mail-title">Пишите:</span>
+        <!-- пример как должно было быть:
+        <a class="contact-mail" href="mailto:email@example.com">Your visible link text</a> -->
         <span class="contact-mail">mail@htmlacademy.ru</span>
       </section>
+      <!-- class="contact" -->
       <section class="adress">
+        <!-- class="contact-title" -->
         <span class="contact-adress-title">Приезжайте в гости:</span>
           <p>
             <span class="contact-adress">ул. Большая</span>
