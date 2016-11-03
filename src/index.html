@@ -5,103 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pink - путешествия</title>
-  <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7X8VpSpYzQcrywNFhqSDbjrZhzVXxIDB&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
 </head>
 <body>
-  
- <header class="page-header">
-  <div class="top-header clearfix">
-      <div class="logo">
-        <h1 class="page-title">
-          <a class="click-logo" href="#">
-            <img src="svg/logo-white-mobile.svg" alt="Логотип сайта">
-          </a>
-        </h1> 
-      </div>
-      <nav class="header-navigation">
-        <div class="icon-close" href="#"></div>
-        <div class="menu-burger" href="#">
-          <div class="strip-menu"></div>
-        </div>
-        <ul class="menu">
-          <li class="menu-item">Главная</li>
-          <li class="menu-item">Фотографии</li>
-          <li class="menu-item">Конкурс</li>
-          <li class="menu-item">html academy</li>
-        </ul> 
-      </nav>
+<header class="page-header">
+  <div class="top-header">
+    <div class="logo">
+      <h1 class="logo-title">Логотип сайта
+        <a class="logo-link" href="#">
+          <img class="logo-img" src="svg/logo-white-mobile.svg" alt="Логотип сайта">
+        </a>
+      </h1> 
     </div>
-</header>
-<main>
-<div class="download-app">
+    <nav class="header-navigation">
+      <div class="icon-close" href="#">Закрыть меню</div>
+      <div class="menu-burger">Показать меню
+        <div class="strip-menu"></div>
+      </div>
+      <ul class="menu">
+        <a href="#"><li class="menu-item">Главная</li></a>
+        <a href="#"><li class="menu-item">Фотографии</li></a>
+        <a href="#"><li class="menu-item">Конкурс</li></a>
+        <a href="#"><li class="menu-item">html academy</li></a>
+      </ul> 
+    </nav>
+  </div>
+  <div class="download-app">
   <div class="container"> 
     <a class="btn-download" href="#">Скачать приложение </a>
     <div class="devices"> 
-      <a class="devices-item" href="#">
-        <img src="img/apple-logo.png" alt="Download for iOS">
+      <a class="devices-link" href="#">
+        <img class="devices-img" src="img/apple-logo.png" alt="Download for iOS">
       </a>
-      <a class="devices-item" href="#">
-        <img src="img/android-logo.png" alt="Download for Android">
+      <a class="devices-link" href="#">
+        <img class="devices-img" src="img/android-logo.png" alt="Download for Android">
       </a>
-      <a class="devices-item" href="#">
-        <img src="img/microsoft-logo.png" alt="Download for Windows Phone">      
+      <a class="devices-link" href="#">
+        <img class="devices-img" src="img/microsoft-logo.png" alt="Download for Windows Phone">      
       </a>
     </div>
     <div class="info-download">
-      <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8 </span>
+      <p class="download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8 </p>
     </div>
   </div>
 </div>
+</header>
 
+<main class="page-main">
 <h2 class="slogan-features"> 
-  <div class="slogan-feature">
-    <span> Устали от серости мегаполиса?</span>
-  </div>
-  <div class="slogan-feature">
-    <span> Нам есть, что Вам предложить!</span>
-  </div>
+  <span class="slogan-feature"> Устали от серости мегаполиса?</span>
+  <span class="slogan-feature"> Нам есть, что Вам предложить!</span>
 </h2>
-<div class="wrap">
+<div class="dignitys">
   <div class="container"> 
     <section class="dignity">
       <h3 class="dignity-title"> Поднимает настроение</h3>
-      <span class="dignity-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</span>      
+      <p class="dignity-content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>      
     </section>
     <section class="dignity">
       <h3 class="dignity-title">Меняет мир вокруг</h3>
-      <span class="dignity-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span>      
+      <p class="dignity-content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>      
     </section>
     <section class="dignity">
       <h3 class="dignity-title">Заводит новых друзей</h3>
-      <span class="dignity-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span>      
+      <p class="dignity-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>      
     </section>
   </div>  
 </div>
-<div class="sl-review">
+<div class="slider-review">
   <input class="btn-item" type="radio" id="btn-1rev" name="tumbler" checked>
   <input class="btn-item"type="radio" id="btn-2rev" name="tumbler" >
   <input class="btn-item"type="radio" id="btn-3rev" name="tumbler" >
-  <div class="sl-review-controlles">
+  <div class="slider-review-controls">
     <label class="for-btn" for="btn-1rev"> </label>
     <label  class="for-btn" for="btn-2rev"> </label>     
     <label  class="for-btn" for="btn-3rev"> </label> 
   </div>
   <div class="reviews">
-    <div class="review"> 
-        <span class="title-review">Николай Петров</span>
-        <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
+    <div class="review-author"> 
+        <p class="review-title">Николай Петров</p>
+        <p class="review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     </div>
-    <div class="review"> 
-        <span class="title-review">Петр Иванов</span>
-        <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
+    <div class="review-author"> 
+        <p class="review-title">Петр Иванов</p>
+        <p class="review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     </div>
-    <div class="review"> 
-        <span class="title-review">Василий Николаев</span>
-        <span class="title-content">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</span>
+    <div class="review-author"> 
+        <p class="review-title">Василий Николаев</p>
+        <p class="review-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     </div>
   </div>
 </div>
@@ -111,64 +106,64 @@
       <input class="btn-item" type="radio" id="btn-1pr" name="toggle">
       <input class="btn-item" type="radio" id="btn-2pr" name="toggle" checked>
       <input class="btn-item" type="radio" id="btn-3pr" name="toggle">      
-      <div class="slider-controlles">
+      <div class="slider-controls">
         <label class="for-btn" for="btn-1pr"> </label>
         <label class="for-btn" for="btn-2pr"> </label>     
         <label class="for-btn" for="btn-3pr"> </label>                  
       </div>
        <div  class="slides">
       <div class="slide">
-        <div class="slide-title clearfix">
-          <span class="package-name">БАЗА</span>
+        <div class="slide-title ">
+          <span class="package-name">База</span>
           <span class="package-price">1,99 USD</span>          
         </div>
-        <div class="slide-item  clearfix">
-          <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
+        <div class="slide-item  ">
+          <span class="service">Розовый фильтр</span>
           <div class="service-yes"> включено</div>
         </div>
-        <div class="slide-item clearfix">
-          <span class="service">СМАЙЛИКИ</span>
+        <div class="slide-item ">
+          <span class="service">Смайлики</span>
           <div class="service-no">не включено</div> 
         </div>    
-        <div class="slide-item clearfix">
-          <span class="service">КОММЕНТАРИИ</span>
+        <div class="slide-item ">
+          <span class="service">Комментарии</span>
           <div class="service-no">не включено</div>
         </div>           
       </div>
       <div class="slide">
-        <div class="slide-title clearfix">
-          <img class="sale" src="./img/hit.png" alt="Выгодное предложение">
-          <span class="package-name">СТАНДАРТ</span>
+        <div class="slide-title ">
+          <img class="sale-image" src="./img/hit.png" alt="Выгодное предложение">
+          <span class="package-name">Стандарт</span>
           <span class="package-price">3,99 USD</span>          
         </div>
-        <div class="slide-item clearfix">
-          <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
+        <div class="slide-item ">
+          <span class="service">Розовый фильтр</span>
           <div class="service-yes">включено</div>
         </div>
-        <div class="slide-item clearfix">
-          <span class="service">СМАЙЛИКИ</span>
+        <div class="slide-item ">
+          <span class="service">Смайлики</span>
           <div class="service-yes"> включено</div>
         </div>    
-        <div class="slide-item clearfix">
-          <span class="service">КОММЕНТАРИИ</span>
+        <div class="slide-item ">
+          <span class="service">Комментарии</span>
           <div class="service-no">не включено</div>
         </div>            
       </div>
       <div class="slide">
-        <div class="slide-title clearfix">
-          <span class="package-name">АНЛИМ</span>
+        <div class="slide-title ">
+          <span class="package-name">Анлим</span>
           <span class="package-price">9,99 USD</span>          
         </div>
-        <div class="slide-item clearfix">
-          <span class="service">РОЗОВЫЙ ФИЛЬТР</span>
+        <div class="slide-item ">
+          <span class="service">Розовый фильтр</span>
           <div class="service-yes"> включено</div>
         </div>
-        <div class="slide-item clearfix">
-          <span class="service">СМАЙЛИКИ</span>
+        <div class="slide-item ">
+          <span class="service">Смайлики</span>
           <div class="service-yes"> включено</div>
         </div>    
-        <div class="slide-item clearfix">
-          <span class="service">КОММЕНТАРИИ</span>
+        <div class="slide-item ">
+          <span class="service">Комментарии</span>
           <div class="service-yes"> включено</div>
         </div>           
       </div>
@@ -177,27 +172,28 @@
   </div>
 </div>
 <div class="lookfor-us">
-  <div class="contact">
+  <div class="contacts">
     <div class="container">
-      <h3 class="contact-title">
+      <h2 class="contact-header">
         <span>Остались вопросы?</span>
         <span>Свяжитесь с нами!</span>
+      </h2>
+      <h3 class="contact">
+        <span class="contact-title">Звоните:</span>
+        <a href="tel:+7(812)555-66-66" class="contact-tel">+7(812)555-66-66</a>
+        
       </h3>
-      <section class="tel">
-        <span class="contact-tel-title">Звоните:</span>
-        <span class="contact-tel">+7(812)555-66-66</span>
-      </section>
-      <section class="mail">  
-        <span class="contact-mail-title">Пишите:</span>
-        <span class="contact-mail">mail@htmlacademy.ru</span>
-      </section>
-      <section class="adress">
-        <span class="contact-adress-title">Приезжайте в гости:</span>
-          <p>
+      <h3 class="contact">  
+        <span class="contact-title">Пишите:</span>
+        <a href="mailto:mail@htmlacademy.ru" class="contact-mail">mail@htmlacademy.ru</a>
+      </h3>
+      <h3 class="contact">
+        <span class="contact-title">Приезжайте в гости:</span>
+          <p class="adress">
             <span class="contact-adress">ул. Большая</span>
             <span class="contact-adress">Конюшенная, 19/8</span>
           </p>
-      </section>
+      </h3>
     </div>
   </div>
   <div id="mymap" class="map"></div>

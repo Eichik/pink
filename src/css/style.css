@@ -14,14 +14,14 @@
 
 .page-header {
   width: 100%;
-  height: 440px;
-  background: url(../img/iphone-hand.png) no-repeat 100% 170px,
-              url(../img/bg-1.jpg) no-repeat 100% 100%;
+  height: 755px;
+  background: url(../img/iphone-hand.png) no-repeat 50% 37%,
+              url(../img/bg-1.jpg) no-repeat 50% 0;
 }
 
 .top-header {
   padding: 20px 20px;
-  background-color:rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -30,21 +30,27 @@
   opacity: 1;
   padding: 20px 0 0;
   position: relative;
+  
 }
 
 .show-navigation .menu {
   display: block;
   border-top: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 63px;
 }
 
 .show-navigation .menu-burger {
   display: none;
 }
 
+
+
 .show-navigation .icon-close {
   display: inline-block;
   position: absolute;
-  top:20px;
+  top: 20px;
   right: 0;
 }
 
@@ -57,12 +63,16 @@
   display: inline-block;
 }
 
-.page-title {
+.logo-title {
   font-size: 1.5em;
   margin: 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
-.click-logo {
+.logo-click {
   text-decoration: none;
   display: inline-block;
   height: 22px;
@@ -79,8 +89,12 @@
   width: 50px;
   opacity: 1;
   position: absolute;
-  top:20px;
+  top: 20px;
   right: 20px;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
 .strip-menu {
@@ -107,13 +121,11 @@
   background: #283645;
   display: none;  
   list-style-type: none;
-  width: 320px;
+  width: 100%;
   padding-left: 0;
   margin: 0;
   text-align: center;
 }
-
-
 
 .menu .menu-item {
   border-bottom: 1px solid #000;
@@ -129,10 +141,14 @@
 
 .icon-close {
   display: none;
-  float: right;
   height: 20px;
   width: 20px; 
   position: relative;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+
 }
 
 .icon-close::before {
@@ -161,10 +177,14 @@
 }
 
 .download-app {
-  text-align: center;
   width: 100%;
   background: #1d2631;
   padding-top: 28px;
+  margin-top: 390px;
+}
+
+.download-text {
+  margin: 0;
 }
 
 .btn-download {
@@ -177,35 +197,40 @@
   line-height: 18px;
   color:#fff;
   margin-bottom: 32px;
-  padding: 20px 30px;
+  padding: 20px 43px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .devices {
   margin-bottom: 20px;
+  margin-left: 20px;
+  width: 221px;
 }
 
-.devices-item {
+.devices-link {
   display: inline-block;
   width: 47px;
   height: 56px;
-  padding-right: 32px;
+  margin-right: 34px;
+  margin-left: 0;
 }
 
-.devices-item {
-  display: inline-block;
-  padding-right: 24px;
+.devices-link:nth-child(2) {
+  margin-right: 37px;
 }
 
-.devices-item {
-  display: inline-block;
+.devices-link:nth-child(3) {
+  margin-right: 0;
 }
 
 .info-download {
+  text-align: center;
   font-size: 14px;
   font-family: "Open Sans";
   color: #fff;
   line-height: 24px;
-  padding: 0 20px 40px;
+  padding-bottom: 35px;
 }
 
 .slogan-features {
@@ -215,16 +240,18 @@
 }
 
 .slogan-feature {
+  display: block;
   margin-bottom: 40px;
   text-align: center;
   font-size: 24px;
   font-family: "Open Sans";
-  color: rgb(40, 54, 69);
+  color: #283645;
 }
 
 
  .dignity {
   text-align: center;
+  margin-top: 40px;
 }
 
 .dignity-title {
@@ -239,7 +266,7 @@
   font-size: 14px;
 }
 
-.wrap {
+.dignitys {
   position: relative;
   background: #f2f2f2 url(../img/iphone.png) no-repeat 50% 510px;
   height: 745px;
@@ -247,20 +274,21 @@
   
 }
 
-.sl-review {
+.slider-review {
   position: relative;
   margin: 0 auto;
   padding: 50px 20px 65px;
   margin-bottom: 90px;
 }
 
-.sl-review-controlles {
+.slider-review-controls {
   position: absolute;
   width: 124px;
   height: 10px;
-  left:50%;
-  margin-left: -62px;
-  bottom: 45px;
+  left: 50%;
+  /*margin-left: -62px;*/
+  transform: translateX(-50%);
+  bottom: 25px;
   text-align: center;
   z-index: 900;
 }
@@ -273,30 +301,34 @@
   background:#b5b9be;
   vertical-align: top;
   border-radius: 50%;
-  border:3px solid #f2f2f2
+  border: 3px solid #f2f2f2
 }
 
 
 
-#btn-1rev:checked ~ .reviews .review:nth-child(1) {
+#btn-1rev:checked ~ .reviews .review-author:nth-child(1) {
   display: block;
 }
-#btn-2rev:checked ~ .reviews .review:nth-child(2) {
+#btn-2rev:checked ~ .reviews .review-author:nth-child(2) {
   display: block;
 }
-#btn-3rev:checked ~ .reviews .review:nth-child(3) {
+#btn-3rev:checked ~ .reviews .review-author:nth-child(3) {
   display: block;
 }
 
 
-#btn-1rev:checked ~ .sl-review-controlles label[for="btn-1rev"],
-#btn-2rev:checked ~ .sl-review-controlles label[for="btn-2rev"],
-#btn-3rev:checked ~ .sl-review-controlles label[for="btn-3rev"] {
+#btn-1rev:checked ~ .slider-review-controls label[for="btn-1rev"],
+#btn-2rev:checked ~ .slider-review-controls label[for="btn-2rev"],
+#btn-3rev:checked ~ .slider-review-controls label[for="btn-3rev"] {
   background: #fff;
   border: 3px #283645 solid;
 }
 
-.review {
+.review-title,
+.review-text {
+  margin: 0;
+}
+.review-author {
   background-color: #fff;
   font-size: 14px;
   font-family: "Open Sans";
@@ -306,7 +338,7 @@
   display: none;
 }
 
-.title-review {
+.review-title {
   display: block;
   font-weight: bold;
   font-size: 18px;
@@ -322,7 +354,7 @@
 }
 
 .price:before,
-.wrap:before {
+.dignitys:before {
   content: "";
   background: url(../svg/triangle-white.svg);
   position: absolute;
@@ -336,12 +368,13 @@
   z-index: 100;
 }
 
-.slider-controlles {
+.slider-controls {
   position: absolute;
   width: 124px;
   height: 10px;
   left:50%;
-  margin-left: -62px;
+  /*margin-left: -62px;*/
+  transform: translateX(-50%);
   bottom: 45px;
   text-align: center;
   z-index: 1000;
@@ -350,7 +383,7 @@
 
 
 .slide {
-  border:2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   line-height: 30px;
   font-family: "Open Sans";
   color: rgb(255, 255, 255);
@@ -378,12 +411,13 @@
   position: relative;
   background: #283645;
   text-align: center;
+  padding-bottom: 17px;
 }
 
-.sale{
+.sale-image{
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   z-index: 10;
 }
 
@@ -391,25 +425,19 @@
   display: block;
 }  
 
-.slide-name {
-  font-size: 18px;
-  font-weight: bold;
-  padding-top: 19px;
-}
+
 
 .package-price {
   font-size: 24px;  
-  padding-bottom: 17px;
 }
 
 .slide-item {
-  height: 60px;
-  padding:0 15px;
+  padding: 0 15px;
   background: #fff;
+  position: relative;
 }
 
 .service-yes {
-  float: right;
   width: 31px;
   height: 16px;
   border-bottom: 4px solid #3dc644;
@@ -417,13 +445,17 @@
   transform: rotate(-45deg);
   margin-top: 14px;
   overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top:0;
 }
 
 .service-no {
-  float:right;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   margin-top: 15px;
+  right: 20px;
+  top:0;
 }
 
 .service-no:before {
@@ -462,19 +494,21 @@
 }
 
 .service {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 60px;
   color: #000;
 }
 
-#btn-1pr:checked ~ .slider-controlles label[for="btn-1pr"],
-#btn-2pr:checked ~ .slider-controlles label[for="btn-2pr"],
-#btn-3pr:checked ~ .slider-controlles label[for="btn-3pr"] {
+#btn-1pr:checked ~ .slider-controls label[for="btn-1pr"],
+#btn-2pr:checked ~ .slider-controls label[for="btn-2pr"],
+#btn-3pr:checked ~ .slider-controls label[for="btn-3pr"] {
   background: #fff;
   border: 3px #283645 solid;
 }
 
 .package-name {
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
@@ -483,10 +517,9 @@
 
 .package-price {
   font-size: 24px;  
-  padding-bottom: 17px;
 }
 
-.contact span {
+.contacts span {
   display: block;
   font-family: "Open Sans";
 }
@@ -496,38 +529,45 @@
   padding-top: 60px;
 }
 
-.contact {
-  padding-bottom: 40px;
+.contacts {
+  margin-bottom: 40px;
 }
-.contact-title {
+.contact {
+  display: block;
+  margin: 0;
+}
+.contact-header {
   font-size: 24px;
-  color: rgb(0, 0, 0);
   line-height: 36px;
-  font-weight: normal;
+
 }
 
-.contact-tel-title,
-.contact-mail-title,
-.contact-adress-title {
-  font-weight: bold;
+.contact-title {
   font-size: 18px;
-  padding-bottom: 10px;
-  line-height: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 36px;
+  font-weight: bold;
+  margin-top: 15px;
 }
+
 
 .contact-adress,
 .contact-mail,
 .contact-tel {
   color: #d22856;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   font-size: 24px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 36px;
+  text-decoration: none;
 }
 
+.adress {
+  margin: 0;
+}
 
-.contact-title span:nth-child {
-  padding-bottom: 30px;
+.contact-adress:first-child {
+  margin-bottom: 0;
 }
 
 .contact-adress {
@@ -538,6 +578,7 @@
   position: relative;
   background: url(../img/map.jpg) 100% 100%; 
   height: 200px;
+  overflow: hidden;
 }
 
 .map:before {
