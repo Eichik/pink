@@ -21,12 +21,7 @@
 
 .top-header {
   padding: 20px 20px;
-<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.3);
-=======
-  /* между свойством и значением делай отступ */
-  background-color:rgba(0, 0, 0, 0.3);
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
   position: relative;
 }
 
@@ -35,7 +30,6 @@
   opacity: 1;
   padding: 20px 0 0;
   position: relative;
-  
 }
 
 .show-navigation .menu {
@@ -49,8 +43,6 @@
 .show-navigation .menu-burger {
   display: none;
 }
-
-
 
 .show-navigation .icon-close {
   display: inline-block;
@@ -84,7 +76,6 @@
   font-size: 0;
 }
 
-/* width: 100%; чтобы тянулся на всю ширину */
 .header-navigation {
   display: inline-block;
 }
@@ -103,7 +94,6 @@
   color: transparent;
 }
 
-/* content нужен как правило для спозиционированных элементов */
 .strip-menu {
   content: "";
   display: block;
@@ -128,12 +118,7 @@
   background: #283645;
   display: none;
   list-style-type: none;
-<<<<<<< HEAD
   width: 100%;
-=======
-  /* тут надо задавать width: 100%, чтобы всегда тянулся на ширину родителя */
-  width: 320px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
   padding-left: 0;
   margin: 0;
   text-align: center;
@@ -151,7 +136,7 @@
   padding: 14px 0;
 }
 
-/* не нужен флоат, лучше сделай через позиционирование как бургер */
+
 .icon-close {
   display: none;
   height: 20px;
@@ -161,7 +146,6 @@
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
-
 }
 
 
@@ -216,7 +200,6 @@
   margin-right: auto;
 }
 
-/* задать ширину от левого до правого девайса, т.е. статичную */
 .devices {
   margin-bottom: 20px;
   margin-left: 20px;
@@ -227,7 +210,6 @@
   display: inline-block;
   width: 47px;
   height: 56px;
-<<<<<<< HEAD
   margin-right: 34px;
   margin-left: 0;
 }
@@ -238,36 +220,17 @@
 
 .devices-link:nth-child(3) {
   margin-right: 0;
-=======
-  /* отступ c справа через margin, а то промежутки между ссылками будут кликабельны */
-  padding-right: 32px;
 }
 
-/* эти стили не нужны */
-.devices-item {
-  display: inline-block;
-  padding-right: 24px;
-}
-
-/* эти стили не нужны */
-.devices-item {
-  display: inline-block;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
-}
-
-/* можно задать ширину, а не регулировать её через паддинг */
 .info-download {
   text-align: center;
   font-size: 14px;
-  /* не забываем давать фоллбек для шрифтов и указывать тип sans-serif или serif */
   font-family: "Open Sans";
   color: #fff;
   line-height: 24px;
   padding-bottom: 35px;
 }
 
-/* верхний блок толкает нижние, т.е. маргин должен быть у верхнего */
-/* ширину регулируем через width */
 .slogan-features {
   margin: 45px 50px 30px;
   color: #283645;
@@ -280,12 +243,7 @@
   text-align: center;
   font-size: 24px;
   font-family: "Open Sans";
-<<<<<<< HEAD
   color: #283645;
-=======
-  /* стараемся задавать единообразно цвет, до этого был везде хекс формат, и тут сделай хекс */
-  color: rgb(40, 54, 69);
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
 }
 
 .dignity {
@@ -296,9 +254,7 @@
 .dignity-title {
   font-weight: bold;
   font-size: 18px;
-  /* толкаться тут должен родитель */
   margin-top: 40px;
-
 }
 
 .dignity-content{
@@ -311,7 +267,6 @@
   background: #f2f2f2 url(../img/iphone.png) no-repeat 50% 510px;
   height: 745px;
   padding-top: 30px;
-
 }
 
 .slider-review {
@@ -324,10 +279,8 @@
 .slider-review-controls {
   position: absolute;
   width: 124px;
-  /* внутринние контролы больше по высоте */
   height: 10px;
   left: 50%;
-  /*margin-left: -62px;*/
   transform: translateX(-50%);
   bottom: 25px;
   text-align: center;
@@ -345,14 +298,14 @@
   border: 3px solid #f2f2f2
 }
 
-
-
 #btn-1rev:checked ~ .reviews .review-author:nth-child(1) {
   display: block;
 }
+
 #btn-2rev:checked ~ .reviews .review-author:nth-child(2) {
   display: block;
 }
+
 #btn-3rev:checked ~ .reviews .review-author:nth-child(3) {
   display: block;
 }
@@ -369,6 +322,7 @@
 .review-text {
   margin: 0;
 }
+
 .review-author {
   background-color: #fff;
   font-size: 14px;
@@ -383,11 +337,8 @@
   display: block;
   font-weight: bold;
   font-size: 18px;
-  /* margin */
   padding-bottom: 20px;
 }
-
-
 
 .price {
   position: relative;
@@ -415,19 +366,11 @@
   width: 124px;
   height: 10px;
   left:50%;
-<<<<<<< HEAD
-  /*margin-left: -62px;*/
   transform: translateX(-50%);
-=======
-  /* есть лучше техника центровки: transform: translateX(-50%); */
-  margin-left: -62px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
   bottom: 45px;
   text-align: center;
   z-index: 1000;
 }
-
-
 
 .slide {
   border: 2px solid #e5e5e5;
@@ -449,8 +392,6 @@
   display: block;
 }
 
-
-/* можно было просто сделать display: none; */
 .btn-item {
   position: absolute;
   opacity: 0;
@@ -474,36 +415,17 @@
   display: block;
 }
 
-<<<<<<< HEAD
-
-
-.package-price {
-  font-size: 24px;  
-=======
-/* нет такого блока с классом */
-.slide-name {
-  font-size: 18px;
-  font-weight: bold;
-  /* паддинг задать у родителя */
-  padding-top: 19px;
-}
-
 .package-price {
   font-size: 24px;
-  /* паддинг задать у родителя */
   padding-bottom: 17px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
 }
 
-/* зачем высота? */
 .slide-item {
   padding: 0 15px;
   background: #fff;
   position: relative;
 }
 
-/* если юзаем флоат, то юзаем для левого и правого блока, иначе создаём обёртку для правой части.
-  но проще всего крестики и галочки сделать через абсолют */
 .service-yes {
   width: 31px;
   height: 16px;
@@ -574,23 +496,12 @@
   border: 3px #283645 solid;
 }
 
-/* паддинг у родителя задаём */
 .package-name {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
   padding-bottom: 0px;
-}
-
-/* паддинг у родителя задаём */
-.package-price {
-<<<<<<< HEAD
-  font-size: 24px;  
-=======
-  font-size: 24px;
-  padding-bottom: 17px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
 }
 
 .contacts span {
@@ -606,10 +517,12 @@
 .contacts {
   margin-bottom: 40px;
 }
+
 .contact {
   display: block;
   margin: 0;
 }
+
 .contact-header {
   font-size: 24px;
   line-height: 36px;
@@ -618,59 +531,45 @@
 
 .contact-title {
   font-size: 18px;
-<<<<<<< HEAD
   color: rgb(0, 0, 0);
   line-height: 36px;
   font-weight: bold;
   margin-top: 15px;
-=======
-  /* margin вместо паддинга */
-  padding-bottom: 10px;
-  line-height: 18px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
 }
-
 
 .contact-adress,
 .contact-mail,
 .contact-tel {
   color: #d22856;
-<<<<<<< HEAD
   margin-bottom: 24px;
-=======
-  /* margin вместо паддинга */
-  padding-bottom: 24px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
   font-size: 24px;
   font-weight: normal;
   line-height: 36px;
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .adress {
   margin: 0;
 }
 
 .contact-adress:first-child {
   margin-bottom: 0;
-=======
-/* селектор не правильный */
-.contact-title span:nth-child {
-  padding-bottom: 30px;
->>>>>>> 85264602c0370e690c2c8a548bf7c885ce4994f3
 }
 
 .contact-adress {
   padding-bottom: 0;
 }
 
-/* добавить overflow: hidden;*/
 .map {
   position: relative;
   background: url(../img/map.jpg) 100% 100%;
   height: 200px;
   overflow: hidden;
+  margin: 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
 .map:before {
@@ -680,7 +579,6 @@
   left: 0;
   display: block;
   width: 100%;
-  /* тут точно проценты? */
   height: 17%;
   background-image: url(../svg/bg-white-mask.svg);
   background-repeat: no-repeat;
