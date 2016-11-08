@@ -14,7 +14,7 @@
 
 .page-header {
   width: 100%;
-  height: 755px;
+  height: 730px;
   background: url(../img/iphone-hand.png) no-repeat 50% 37%,
               url(../img/bg-1.jpg) no-repeat 50% 0;
 }
@@ -187,7 +187,7 @@
 
 .btn-download {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   border-radius: 32px;
   border: 3px solid #fff;
   font-weight: bold;
@@ -195,14 +195,17 @@
   line-height: 18px;
   color:#fff;
   margin-bottom: 32px;
-  padding: 20px 43px;
+  padding: 20px 0;
   margin-left: auto;
   margin-right: auto;
+  width: 275px;
+  text-align: center;
 }
 
 .devices {
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 221px;
 }
 
@@ -394,7 +397,7 @@
 
 .btn-item {
   position: absolute;
-  opacity: 0;
+  display: none;
 }
 
 .slide-title {
@@ -562,7 +565,7 @@
 
 .map {
   position: relative;
-  background: url(../img/map.jpg) 100% 100%;
+  background: url(../img/map.jpg) no-repeat 50% 70%;
   height: 200px;
   overflow: hidden;
   margin: 0;
@@ -572,7 +575,7 @@
   color: transparent;
 }
 
-.map:before {
+  .map:before {
   content: "";
   position: absolute;
   top: 0;
@@ -584,7 +587,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 100;
-}
+  }
 /*
 .map:after{
   content: "";
