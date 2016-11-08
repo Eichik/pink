@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pink - путешествия</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7X8VpSpYzQcrywNFhqSDbjrZhzVXxIDB&amp;width=100%&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7X8VpSpYzQcrywNFhqSDbjrZhzVXxIDB&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
 </head>
 <body>
 <header class="page-header">
@@ -16,7 +16,9 @@
     <div class="logo">
       <h1 class="logo-title">Логотип сайта
         <a class="logo-link" href="#">
-          <img class="logo-img" src="svg/logo-white-mobile.svg" alt="Логотип сайта">
+          <img class="mobile-logo-svg" src="svg/logo-white-mobile.svg" alt="Логотип сайта">
+          <img class="tablet-logo-svg" src="svg/logo-white-tablet.svg" alt="Логотип сайта">
+          <img class="desktop-logo-svg" src="svg/logo-white-desktop.svg" alt="Логотип сайта">          
         </a>
       </h1> 
     </div>
@@ -35,6 +37,7 @@
   </div>
   <div class="download-app">
     <div class="container"> 
+      <p class="download-title"> Взгляните на жизнь иначе!</p>
       <a class="btn-download" href="#">Скачать приложение </a>
       <div class="devices"> 
         <a class="devices-link" href="#">
@@ -73,6 +76,18 @@
         <h3 class="dignity-title">Заводит новых друзей</h3>
         <p class="dignity-content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>      
       </section>
+    </div>
+  </div>
+  <div class="effect">
+    <div class="effect-wrap">
+      <h2 class="effect-title">Эффект</h2>
+      <h2 class="effect-title">на 24 часа!</h2>
+      <span class="effect-content">Британские ученые провели исследования</span>
+      <span class="effect-content">и доказали, что положительный эффект</span>
+      <span class="effect-content">от использования приложения длится</span>
+      <span class="effect-content">целые сутки!</span>
+      
+      <a class="effect-link" href="#">Узнать больше об исследовании</a>
     </div>
   </div>
   <div class="slider-review">
@@ -196,6 +211,36 @@
     </div>
     <div id="mymap" class="map">Карта проезда</div>
   </div>
+  <footer class="page-footer">
+    <div class="logo-footer">
+      <a class="footer-logo-link" href=#>
+        <img src="svg/logo-blue-tablet.svg">
+      </a>
+    </div>
+    <div class="social">
+      <div class="circle">
+        <a class="twitter" href=#>
+          <img class="twitter-svg" src="svg/twitter.svg">
+        </a>
+      </div>
+      <div class="circle">
+        <a class="facebook" href=#>
+          <img class="facebook-svg" src="svg/facebook.svg">
+        </a>
+      </div>
+      <div class="circle">
+        <a class="youtube" href=#>
+          <img class="youtube-svg" src="svg/youtube.svg">
+        </a>
+      </div>
+    </div>
+    <div class="author"> 
+      <span>Разработано </span>
+      <a class="link-html-academy" href=#>
+          <img class="logo-html-academy" src="svg/htmlacademy.svg">
+      </a>
+    </div>
+  </footer>
 </main>
 </body>
 </html>
