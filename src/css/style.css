@@ -1,13 +1,676 @@
+.container {
+  padding: 0 130px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.page-header {
+  width: 100%;
+  height: 855px;
+  background: url(../img/iphone-hand-tablet.png) no-repeat 50% 100%,
+              url(../img/bg-back-desktop.jpg) no-repeat 50% 0;
+}
+
+.top-header {
+  padding: 27px 130px 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo-title {
+  font-size: 1.5em;
+  margin: 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.mobile-logo-svg,
+.tablet-logo-svg {
+  display: none;
+}
+
+.desktop-logo-svg {
+  display: inline-block;
+}
+
+.header-navigation {  
+  float: right;
+  vertical-align:  middle;
+}
+
+.menu-burger {
+  display: none;
+}
+
+.strip-menu {
+  display: none;
+}
+
+.menu  {
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-link {
+  display:  inline-block;
+  margin-right:  80px;
+  text-decoration: none;
+}
+
+.menu-link:last-child {
+  margin-right: 0;
+}
+
+
+.menu .menu-item {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Open Sans";
+  color: #fff;
+  padding-top: 14px;
+}
+
+.html-uppercase {
+  text-transform: uppercase;
+}
+
+.icon-close {
+  display: none;
+}
+
+.download-app {
+  width: 500px;
+  margin-top: 100px;
+}
+
+.download-text {
+  margin: 0;
+  width:  310px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+}
+
+.download-title {
+  width: 235px;
+  display: inline-block;
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  padding-left: 30px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+}
+
+.btn-download {
+  text-decoration: none;
+  display: block;
+  border-radius: 32px;
+  border: 3px solid #fff;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 18px;
+  color:#fff;
+  margin-top: 50px;  
+  margin-bottom: 60px;
+  padding: 15px 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 294px;
+  text-align: center;
+}
+
+.devices {
+  margin-bottom: 50px;
+  margin-left: 46px;
+  margin-right: auto;
+  width: 221px;
+}
+
+.devices-link {
+  display: inline-block;
+  margin-right: 34px;
+  margin-left: 0;
+}
+
+.devices-link:nth-child(2) {
+  margin-right: 37px;
+}
+
+.devices-link:nth-child(3) {
+  margin-right: 0;
+}
+
+.slogan-features {
+  margin: 40px 0 80px;
+  color: #283645;
+}
+
+.slogan-feature {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Open Sans";
+  color: #283645;
+  font-weight: 100; 
+}
+
+.slogan-feature:nth-child(2) {
+  margin-right: 390px;
+  margin-left: 390px;
+  
+}
+
+
+.dignity {
+  text-align: left;
+  margin-top: 40px;
+  width: 50%;
+  margin-left: 310px;
+}
+
+.dignity:first-child {
+  padding-top: 50px;     
+}
+
+.dignity-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.dignity-content{
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.dignitys {
+  height: 480px;
+  position: relative;
+  background: url (../img/phone1-desktop.png) no-repeat 40px 0,
+              url (../img/phone2-desktop.png) no-repeat 300px 0,
+              url (../img/phone3-desktop.png) no-repeat 600px 0;        
+}
+
+.effect {
+  height: 400px;
+  background: url(../img/trimmer24-desktop.png) no-repeat 130px 55px;
+}
+
+.effect-wrap {
+  margin-left: 500px;
+  padding-top: 100px;
+}
+
+.effect-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+}
+
+.effect-content {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  margin-right: 50px;
+}
+
+.effect-title:nth-child(2),
+.effect-content:nth-child(6) {
+  margin-bottom: 10px;
+}
+
+.effect-link {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans";
+  font-weight: normal;
+}
+
+.slider-review {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 40px 65px;
+}
+
+.slider-review-controls {
+  position: absolute;
+  width: 124px;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  text-align: center;
+  z-index: 900;
+}
+
+.for-btn {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 8px;
+  background:#b5b9be;
+  vertical-align: top;
+  border-radius: 50%;
+  border: 3px solid #f2f2f2
+}
+
+#btn-1rev:checked ~ .reviews .review-author:nth-child(1) {
+  display: block;
+}
+
+#btn-2rev:checked ~ .reviews .review-author:nth-child(2) {
+  display: block;
+}
+
+#btn-3rev:checked ~ .reviews .review-author:nth-child(3) {
+  display: block;
+}
+
+
+#btn-1rev:checked ~ .slider-review-controls label[for="btn-1rev"],
+#btn-2rev:checked ~ .slider-review-controls label[for="btn-2rev"],
+#btn-3rev:checked ~ .slider-review-controls label[for="btn-3rev"] {
+  background: #fff;
+  border: 3px #283645 solid;
+}
+
+.review-title,
+.review-text {
+  margin: 0;
+}
+
+.review-author {
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  line-height: 30px;
+  text-align: center;
+  display: none;
+}
+
+.review-title {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.price {
+  position: relative;
+  background: #f2f2f2;
+  padding: 100px 0 100px;
+}
+
+.price:before,
+.dignitys:before {
+  content: "";
+  background: url(../svg/triangle-white.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+.slider-controls {
+  position: absolute;
+  width: 124px;
+  height: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slide {
+  border: 2px solid #e5e5e5;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
+#btn-1pr:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2pr:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3pr:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
+.btn-item {
+  position: absolute;
+  display: none;
+}
+
+.slide-title {
+  position: relative;
+  background: #283645;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.sale-image{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.slide-title span {
+  display: block;
+}
+
+.package-price {
+  font-size: 24px;
+  padding-bottom: 17px;
+}
+
+.slide-item {
+  padding: 0 15px;
+  background: #fff;
+  position: relative;
+}
+
+.service-yes {
+  width: 31px;
+  height: 16px;
+  border-bottom: 4px solid #3dc644;
+  border-left: 4px solid #3dc644;
+  transform: rotate(-45deg);
+  margin-top: 14px;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top:0;
+}
+
+.service-no {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 15px;
+  right: 20px;
+  top:0;
+}
+
+.service-no:before {
+  float: right;
+  width: 19px;
+  height: 19px;
+  border-bottom: 4px solid #f25b26;
+  border-right: 4px solid #f25b26;
+  transform: rotate(-45deg);
+  margin-top: 14px;
+  margin-right: 4px;
+  position: absolute;
+  content: "";
+  left: 60px;
+  top: -10px;
+}
+
+.service-no:after {
+  content: "";
+  float: right;
+  width: 19px;
+  height: 19px;
+  border-bottom: 4px solid #f25b26;
+  border-left: 4px solid #f25b26;
+  transform: rotate(45deg);
+  margin-top: 14px;
+  margin-right: -10px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+
+.slide-item:nth-child(3),
+.slide-item:nth-child(2) {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.service {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 60px;
+  color: #000;
+}
+
+#btn-1pr:checked ~ .slider-controls label[for="btn-1pr"],
+#btn-2pr:checked ~ .slider-controls label[for="btn-2pr"],
+#btn-3pr:checked ~ .slider-controls label[for="btn-3pr"] {
+  background: #fff;
+  border: 3px #283645 solid;
+}
+
+.package-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 19px;
+  padding-bottom: 0px;
+}
+
+.contacts span {
+  display: block;
+  font-family: "Open Sans";
+}
+
+.lookfor-us {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contact {
+  display: block;
+  margin: 0;
+}
+
+.contact-header {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.contact-title {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 36px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.contact-adress,
+.contact-mail,
+.contact-tel {
+  color: #d22856;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.adress {
+  margin: 0;
+}
+
+.contact-adress:first-child {
+  margin-bottom: 0;
+}
+
+.contact-adress {
+  padding-bottom: 0;
+}
+
+.map {
+  position: relative;
+  background: url(../img/map.jpg) no-repeat 50% 70%;
+  height: 375px;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+  .map:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 75px;
+  background-image: url(../svg/bg-white-mask.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+  }
+/* красивый кружочек на карте
+.map:after{
+  content: "";
+  position: absolute;
+  top: 145px;
+  left: 170px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url(../svg/map-marker.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}*/
+
+.page-footer {
+  margin-top: 35px;
+  margin-left: 40px;
+  margin-bottom:  40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; 
+  display:flex; 
+}
+
+.footer-logo-link {
+  display: inline-block;
+}
+
+.logo-footer {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 12px;
+}
+
+.circle:last-child {
+  margin-right: 0;
+}
+
+.twitter-svg {
+  margin-left: 13.5px;
+  margin-top: 15.5px;
+}
+
+.facebook-svg{
+  margin-left: 18px;
+  margin-top: 13.5px;
+}
+
+.youtube-svg{
+  margin-left: 17px;
+  margin-top: 16px;
+}
+
+.author{
+  display: inline-block;
+  font-size:  14px;
+  line-height: 18px;
+  vertical-align: top;
+  vertical-align: middle;
+}
+
+.link-html-academy {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-html-academy{
+  margin-left: 15px;
+}
+
 @media (min-width: 200px) and (max-width: 690px) {
-  .tablet-logo-svg {
-    display: none;
-  }
+.tablet-logo-svg {
+  display: none;
+}
 
-  .desktop-logo-svg {
-    display: none;
-  }
+.desktop-logo-svg {
+  display: none;
+}
 
-  .container {
+.mobile-logo-svg {
+  display: inline-block;
+}
+
+.container {
   padding: 0 20px;
 }
 
@@ -23,7 +686,7 @@
 
 .page-header {
   width: 100%;
-  height: 730px;
+  height: 790px;
   background: url(../img/iphone-hand.png) no-repeat 50% 37%,
               url(../img/bg-1.jpg) no-repeat 50% 0;
 }
@@ -185,6 +848,16 @@
 
 .download-text {
   margin: 0;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #fff;
+  line-height: 24px;
+}
+
+.info-download {
+  text-align: center;
+  padding-bottom: 35px;
 }
 
 .download-title {
@@ -206,6 +879,7 @@
   margin-right: auto;
   width: 275px;
   text-align: center;
+  margin-top: 0;
 }
 
 .devices {
@@ -229,14 +903,6 @@
   margin-right: 0;
 }
 
-.info-download {
-  text-align: center;
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: #fff;
-  line-height: 24px;
-  padding-bottom: 35px;
-}
 
 .slogan-features {
   margin: 45px 50px 30px;
@@ -253,9 +919,19 @@
   color: #283645;
 }
 
+.slogan-feature:nth-child(2) {
+  margin:  0;
+}
+
 .dignity {
   text-align: center;
   margin-top: 40px;
+  margin-left:  0;
+  width:  100%;
+}
+
+.dignity:first-child {
+  padding-top: 0;
 }
 
 .dignity-title {
@@ -611,9 +1287,13 @@
 }*/
 }
 
-@media (min-width: 700px) { 
+.page-footer {
+  display: none;
+}
+
+@media (min-width: 700px) and (max-width: 1190px){ 
   
-  .container {
+.container {
   padding: 0 40px;
 }
 
@@ -627,7 +1307,7 @@
   clear: both;
 }
 
-  .page-header {
+.page-header {
   width: 100%;
   height: 730px;
   background: url(../img/iphone-hand-tablet.png) no-repeat 50% 100%,
@@ -1203,8 +1883,18 @@
 }
 
 .contact {
-  display: block;
+  display: inline-block;
   margin: 0;
+}
+
+.contact:nth-child(2) {
+  margin-left: 45px;
+  margin-right: 100px;
+}
+
+.contact:last-child {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-header {
@@ -1215,7 +1905,7 @@
 .contact-title {
   font-size: 18px;
   color: rgb(0, 0, 0);
-  line-height: 36px;
+  line-height: 26px;
   font-weight: bold;
   margin-top: 15px;
 }
@@ -1226,10 +1916,11 @@
   color: #d22856;
   margin-bottom: 24px;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 36px;
   text-decoration: none;
 }
+
 
 .adress {
   margin: 0;
@@ -1353,11 +2044,6 @@
 .logo-html-academy{
   margin-left: 15px;
 }
-
-
-
-
-
 
 }
 
