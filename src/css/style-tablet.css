@@ -1,5 +1,8 @@
+
+@media (min-width: 700px) and (max-width: 1190px){ 
+  
 .container {
-  padding: 0 130px;
+  padding: 0 40px;
 }
 
 .clearfix:before,
@@ -14,15 +17,46 @@
 
 .page-header {
   width: 100%;
-  height: 855px;
+  height: 730px;
   background: url(../img/iphone-hand-tablet.png) no-repeat 50% 100%,
-              url(../img/bg-back-desktop.jpg) no-repeat 50% 0;
+              url(../img/bg-back-tablet.jpg) no-repeat 50% 0;
 }
 
 .top-header {
-  padding: 27px 130px 45px;
+  padding: 27px 40px 40px;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
+}
+
+.show-navigation .top-header {
+  background: #283645;
+  opacity: 1;
+  padding: 30px 0 0;
+  position: relative;
+}
+
+.show-navigation .menu {
+  display: block;
+  border-top: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 107px;
+}
+
+.show-navigation .menu-burger {
+  display: none;
+}
+
+.show-navigation .icon-close {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.show-navigation .logo {
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 
 .logo {
@@ -38,29 +72,59 @@
   color: transparent;
 }
 
-.mobile-logo-svg,
-.tablet-logo-svg {
+.mobile-logo-svg {
   display: none;
 }
 
-.desktop-logo-svg {
+.tablet-logo-svg {
   display: inline-block;
 }
 
-.header-navigation {  
-  float: right;
-  vertical-align:  middle;
+.desktop-logo-svg {
+  display: none;
+}
+
+.header-navigation {
+  display: inline-block;
 }
 
 .menu-burger {
-  display: none;
+  display: inline-block;
+  height: 24px;
+  width: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
 .strip-menu {
-  display: none;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.menu-burger:after,
+.menu-burger:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 1;
 }
 
 .menu  {
+  background: #283645;
+  display: none;
   list-style-type: none;
   width: 100%;
   padding-left: 0;
@@ -68,36 +132,63 @@
   text-align: center;
 }
 
-.menu-link {
-  display:  inline-block;
-  margin-right:  80px;
-  text-decoration: none;
-}
-
-.menu-link:last-child {
-  margin-right: 0;
-}
-
-
 .menu .menu-item {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 32px;
   font-family: "Open Sans";
-  color: #fff;
-  padding-top: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 0;
 }
 
-.html-uppercase {
-  text-transform: uppercase;
+.menu-link {
+  display: block;
+  margin-right:  0;
 }
 
 .icon-close {
   display: none;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+
+.icon-close::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.icon-close::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(45deg);
+  font-size: 0;
+  position: absolute;
+  top: 8px;
+  left: -20px;
 }
 
 .download-app {
-  width: 500px;
-  margin-top: 100px;
+  width: 40px;
+  margin-top: 90px;
 }
 
 .download-text {
@@ -112,13 +203,13 @@
 }
 
 .download-title {
-  width: 235px;
+  width: 200px;
   display: inline-block;
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 50px;
   font-family: "Open Sans";
   font-weight: lighter;
 }
@@ -129,11 +220,11 @@
   border-radius: 32px;
   border: 3px solid #fff;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 18px;
   color:#fff;
-  margin-top: 50px;  
-  margin-bottom: 60px;
+  margin-top: 37px;  
+  margin-bottom: 45px;
   padding: 15px 0;
   margin-left: auto;
   margin-right: auto;
@@ -142,7 +233,7 @@
 }
 
 .devices {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 46px;
   margin-right: auto;
   width: 221px;
@@ -163,25 +254,24 @@
 }
 
 .slogan-features {
-  margin: 40px 0 80px;
+  margin: 45px 40px 30px;
   color: #283645;
 }
 
 .slogan-feature {
   display: block;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Open Sans";
   color: #283645;
   font-weight: 100; 
 }
 
 .slogan-feature:nth-child(2) {
-  margin-right: 390px;
-  margin-left: 390px;
+  margin-right: 50px;
+  margin-left: 50px;
   
 }
-
 
 .dignity {
   text-align: left;
@@ -208,44 +298,40 @@
 }
 
 .dignitys {
-  height: 480px;
   position: relative;
-  background: url (../img/phone1-desktop.png) no-repeat 40px 0,
-              url (../img/phone2-desktop.png) no-repeat 300px 0,
-              url (../img/phone3-desktop.png) no-repeat 600px 0;        
+  background: #f2f2f2 url(../img/iphone-tablet.png) no-repeat 40px 0;
+  height: 480px;
 }
 
 .effect {
   height: 400px;
-  background: url(../img/trimmer24-desktop.png) no-repeat 130px 55px;
+  background: url(../img/trimmer24.png) no-repeat 40px 55px;
 }
 
 .effect-wrap {
-  margin-left: 500px;
+  margin-left: 350px;
   padding-top: 100px;
 }
 
 .effect-title {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   font-family: "Open Sans";
   font-weight: bold;
-  display: inline-block;
+  display: block;
   margin: 0;
+  margin-right: 170px;
+  margin-bottom: 30px;
 }
 
 .effect-content {
-  display: inline-block;
+  display: block;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans";
   font-weight: normal;
   margin-right: 50px;
-}
-
-.effect-title:nth-child(2),
-.effect-content:nth-child(6) {
-  margin-bottom: 10px;
+  margin-bottom: 20px; 
 }
 
 .effect-link {
@@ -314,8 +400,7 @@
   font-size: 18px;
   line-height: 30px;
   font-family: "Open Sans";
-  color: rgb(0, 0, 0);
-  line-height: 30px;
+  color: #000;
   text-align: center;
   display: none;
 }
@@ -358,7 +443,14 @@
 }
 
 .slider-controls {
-  display:  none;
+  position: absolute;
+  width: 124px;
+  height: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  text-align: center;
+  z-index: 1000;
 }
 
 .slide {
@@ -382,6 +474,7 @@
 }
 
 .btn-item {
+  position: absolute;
   display: none;
 }
 
@@ -511,6 +604,16 @@
   margin: 0;
 }
 
+.contact:nth-child(2) {
+  margin-left: 45px;
+  margin-right: 100px;
+}
+
+.contact:last-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact-header {
   font-size: 40px;
   font-weight: lighter;
@@ -519,7 +622,7 @@
 .contact-title {
   font-size: 18px;
   color: rgb(0, 0, 0);
-  line-height: 36px;
+  line-height: 26px;
   font-weight: bold;
   margin-top: 15px;
 }
@@ -534,6 +637,7 @@
   line-height: 36px;
   text-decoration: none;
 }
+
 
 .adress {
   margin: 0;
@@ -566,7 +670,7 @@
   left: 0;
   display: block;
   width: 100%;
-  height: 100px;
+  height: 75px;
   background-image: url(../svg/bg-white-mask.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -587,21 +691,21 @@
 }*/
 
 .page-footer {
-  margin-top: 70px;
+  margin-top: 35px;
   margin-left: 40px;
-  margin-bottom:  80px;
+  margin-bottom:  40px;
   width: 90%;
   margin-left: auto;
   margin-right: auto; 
-  display: flex; 
+  display:flex; 
 }
 
 .footer-logo-tablet {
-  display: none;
+  display: inline-block;
 }
 
 .footer-logo-desktop {
-  display: inline-block;
+  display: none;
 }
 
 .logo-footer {
@@ -662,3 +766,4 @@
   margin-left: 15px;
 }
 
+}
