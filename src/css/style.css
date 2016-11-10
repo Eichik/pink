@@ -217,7 +217,8 @@
 
 .effect {
   height: 400px;
-  background: url(../img/trimmer24-desktop.png) no-repeat 130px 55px;
+  background: #f2f2f2 url(../img/trimmer24-desktop.png) no-repeat 130px 55px;
+  padding-bottom: 60px;
 }
 
 .effect-wrap {
@@ -307,6 +308,18 @@
 .review-title,
 .review-text {
   margin: 0;
+}
+.review-author:before {
+  background: url(../svg/quotes.svg);
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 100;
 }
 
 .review-author {
