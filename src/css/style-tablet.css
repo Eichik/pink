@@ -1,5 +1,5 @@
 
-@media (min-width: 700px) and (max-width: 1190px){ 
+@media (min-width: 700px) and (max-width: 1199px){ 
   
 .container {
   padding: 0 40px;
@@ -187,7 +187,7 @@
 }
 
 .download-app {
-  width: 40px;
+  width: 400px;
   margin-top: 90px;
 }
 
@@ -226,8 +226,6 @@
   margin-top: 37px;  
   margin-bottom: 45px;
   padding: 15px 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 294px;
   text-align: center;
 }
@@ -237,6 +235,7 @@
   margin-left: 46px;
   margin-right: auto;
   width: 221px;
+  opacity: 0.7;
 }
 
 .devices-link {
@@ -254,7 +253,7 @@
 }
 
 .slogan-features {
-  margin: 45px 40px 30px;
+  margin: 45px 40px 50px;
   color: #283645;
 }
 
@@ -275,19 +274,21 @@
 
 .dignity {
   text-align: left;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 50%;
   margin-left: 310px;
+  padding: 0;
 }
 
-.dignity:first-child {
-  padding-top: 50px;     
+.dignity-wrap:first-child {
+  margin-top: 50px;     
 }
 
 .dignity-title {
   font-weight: bold;
   font-size: 18px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .dignity-content{
@@ -295,12 +296,28 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .dignitys {
   position: relative;
-  background: #f2f2f2 url(../img/iphone-tablet.png) no-repeat 40px 0;
+  background-image: url(../img/iphone-tablet.png) ,
+                    url(../svg/triangle-white.svg);
+  background-position: 40px 0, 
+                       100% 0;
+  background-size: auto auto, 100% 70px;
+  background-color: #f2f2f2;
   height: 480px;
+}
+
+.dignity-img {
+  display: none;
+}
+
+.dignity-wrap {
+  margin: 0;
+  width: 100%;
 }
 
 .effect {
@@ -345,7 +362,7 @@
 .slider-review {
   position: relative;
   margin: 0 auto;
-  padding: 50px 40px 65px;
+  padding: 0 40px 65px;
 }
 
 .slider-review-controls {
@@ -405,6 +422,10 @@
   display: none;
 }
 
+.review-author:before {
+  display: none;
+}
+
 .review-title {
   display: block;
   font-weight: bold;
@@ -427,8 +448,11 @@
   padding: 100px 0 100px;
 }
 
-.price:before,
 .dignitys:before {
+  display: none;
+}
+
+.price:before {
   content: "";
   background: url(../svg/triangle-white.svg);
   position: absolute;
@@ -457,7 +481,7 @@
   border: 2px solid #e5e5e5;
   line-height: 30px;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: #fff;
   display: none;
 }
 
@@ -602,14 +626,17 @@
 .contact {
   display: inline-block;
   margin: 0;
+  margin-right: 0;
 }
 
+
 .contact:nth-child(2) {
+  margin-right: 90px;
   margin-left: 45px;
-  margin-right: 100px;
 }
 
 .contact:last-child {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -621,10 +648,11 @@
 
 .contact-title {
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color:#000;;
   line-height: 26px;
   font-weight: bold;
   margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .contact-adress,
@@ -663,7 +691,7 @@
   color: transparent;
 }
 
-  .map:before {
+.map:before {
   content: "";
   position: absolute;
   top: 0;

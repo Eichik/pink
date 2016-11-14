@@ -1,4 +1,4 @@
-@media (min-width: 200px) and (max-width: 690px) {
+@media (min-width: 200px) and (max-width: 699px) {
 .tablet-logo-svg {
   display: none;
 }
@@ -141,7 +141,7 @@
   font-size: 18px;
   line-height: 32px;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   padding: 14px 0;
@@ -221,8 +221,6 @@
   color:#fff;
   margin-bottom: 32px;
   padding: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 275px;
   text-align: center;
   margin-top: 0;
@@ -271,9 +269,26 @@
 
 .dignity {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-left:  0;
   width:  100%;
+  padding: 0;
+}
+
+.dignity-img {
+  display: none;
+}
+
+.dignity-wrap {
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dignity-wrap:last-child {
+  margin-right: auto;
+
 }
 
 .dignity:first-child {
@@ -283,12 +298,15 @@
 .dignity-title {
   font-weight: bold;
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .dignity-content{
   font-family: "Open Sans";
   font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
 }
 
 .dignitys {
@@ -306,7 +324,6 @@
   position: relative;
   margin: 0 auto;
   padding: 50px 20px 65px;
-  margin-bottom: 90px;
 }
 
 .slider-review-controls {
@@ -377,6 +394,10 @@
   display:  none;
 }
 
+.review-author:before {
+  display: none;
+}
+
 .price {
   position: relative;
   background: #f2f2f2;
@@ -415,7 +436,7 @@ display: block;
   border: 2px solid #e5e5e5;
   line-height: 30px;
   font-family: "Open Sans";
-  color: rgb(255, 255, 255);
+  color: #fff;
   display: none;
 }
 
@@ -570,7 +591,7 @@ display: block;
 
 .contact-title {
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color: #000;
   line-height: 36px;
   font-weight: bold;
   margin-top: 15px;
