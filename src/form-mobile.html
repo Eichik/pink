@@ -1,135 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form-mobile</title>
-  <link href="font/stylesheet-openSans.css" rel="stylesheet">
-  <link href="style/style-form-m.css" rel="stylesheet">
-  <link href="style/normalize.css" rel="stylesheet">
+  <title>Конкурс от Pink</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style-form-m.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
-  <div class="info"> 
-    <a class="logo" href="#"><img src="img/logotype-white-mobile.png"></a>
-    <a class="menu-burger" href="#"><img src="img/menu-burger.png"></a>
-    <div class="wrap">
-      <span>Конкурс на самое безбашеное путешествие с Пинк </span>
+  <header class="page-header">
+  <div class="top-header clearfix">
+    <div class="logo">
+      <h1 class="logo-title">Логотип сайта
+        <a class="logo-link" href="#">
+          <img class="mobile-logo-svg" src="svg/logo-white-mobile.svg" alt="Логотип сайта">
+          <img class="tablet-logo-svg" src="svg/logo-white-tablet.svg" alt="Логотип сайта">
+          <img class="desktop-logo-svg" src="svg/logo-white-desktop.svg" alt="Логотип сайта">          
+        </a>
+      </h1> 
     </div>
+    <nav class="header-navigation">
+      <div class="icon-close" >Закрыть меню</div>
+      <div class="menu-burger">Показать меню
+        <div class="strip-menu"></div>
+      </div>
+      <ul class="menu">
+        <a  class="menu-link" href="#">
+          <li class="menu-item">Главная</li>
+        </a>
+        <a  class="menu-link" href="#">
+          <li class="menu-item">Фотографии</li>
+        </a>
+        <a  class="menu-link" href="#">
+          <li class="menu-item">Конкурс</li>
+        </a>
+        <a  class="menu-link" href="#">
+          <li class="menu-item">
+            <span class="html-uppercase">html</span>
+             Academy
+          </li>
+        </a>
+      </ul> 
+    </nav>
   </div>
+    <h2 class="contect">Конкурс на самое безбашеное путешествие с Пинк</h2>
+  </header>
+<main class="main-page-form">
   <div class="fio"> 
-    <div class="wrap">
-      <span> Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</span>
-    </div>
-    <form action="#" name="user-form">
-      <label for="user-name">ИМЯ</label>
-      <input type="text" id="user-name" name="user-name" placeholder="Введите ваше имя">
-      <label for="user-surname">ФАМИЛИЯ</label>
-      <input type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию">
-      <label for="user-middlename">ОТЧЕСТВО</label>
-      <input type="text" id="user-middlename" name="user-middlename" placeholder="Ну и отчество тоже">
+  <div class="container">
+    <p class="share-story">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+    <form class="enter-fio" action="#" name="user-form">
+      <label class="label-name" for="user-name">Имя</label>
+      <input class="input-name" type="text" id="user-name" name="user-name" placeholder="Введите ваше имя">
+      <label class="label-surname" for="user-surname">Фамилия</label>
+      <input class="input-surname" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию">
+      <label class="label-middlename" for="user-middlename">Отчество</label>
+      <input class="input-middlename" type="text" id="user-middlename" name="user-middlename" placeholder="Ну и отчество тоже">
     </form>
   </div>
-  <div class="achievements"> 
-    <div class="wrap">
-      <span>ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</span>
-    </div>
-    <form>
-      <div class="wrapper">
-        <input type="checkbox" id="c1" name="cc" checked/>
-        <label for="c1"><span></span>Сделал селфи с акулой</label>
+</div>
+
+<section class="achievements"> 
+  <div class="container">
+    <h3 class="achievements-title">Ваши безбашенные достижения в путешествии</h3>
+    <form class="your-achievements">
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c1" name="cc" checked>
+        <label class="label-checkbox" for="c1">
+          <span class="tisk">Выбрать</span>
+          Сделал селфи с акулой
+        </label>
       </div>
-      <div class="wrapper">
-        <input type="checkbox" id="c2" name="cc" checked/>
-        <label for="c2"><span></span>Обгорел на пляже</label>
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c2" name="cc" checked>
+        <label class="label-checkbox" for="c2">
+          <span class="tisk">Выбрать</span>
+          Обгорел на пляже
+        </label>
       </div>
-      <div class="wrapper">
-        <input type="checkbox" id="c3" name="cc" />
-        <label for="c3"><span></span>Видел Чака Норриса</label>
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c3" name="cc" >
+        <label class="label-checkbox" for="c3">
+          <span class="tisk">Выбрать</span>
+          Видел Чака Норриса
+        </label>
       </div>
-      <div class="wrapper">
-        <input type="checkbox" id="c4" name="cc" checked/>
-        <label for="c4"><span></span>Накупил сувениров</label>
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c4" name="cc" checked>
+        <label class="label-checkbox" for="c4">
+          <span class="tisk">Выбрать</span>
+          Накупил сувениров
+        </label>
       </div>
-      <div class="wrapper">
-        <input type="checkbox" id="c5" name="cc" />
-        <label for="c5"><span></span>Удержал башню</label>
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c5" name="cc" >
+        <label class="label-checkbox" for="c5">
+          <span class="tisk">Выбрать</span>
+          Удержал башню
+        </label>
       </div>
-      <div class="wrapper">
-        <input type="checkbox" id="c6" name="cc" />
-        <label for="c6"><span></span>Разгромил отель</label>
+      <div class="wrap-achivment">
+        <input class="check" type="checkbox" id="c6" name="cc" >
+        <label class="label-checkbox" for="c6">
+          <span class="tisk">Выбрать</span>
+          Разгромил отель
+        </label>
       </div>      
     </form>
-  </div>
-  <div class="contact">
-    <form action="#" name="user-contact">
-      <label for="tel">НОМЕРОK ТЕЛЕФОНЧИКА</label>
-      <input type="text" id="user-tel" name="user-tel" placeholder="Hомер, пожалуйста">
-      <label for="user-mail">АДРЕСОК ПОЧТЫ</label>
-      <input type="text" id="user-mail" name="user-mail" placeholder="Email, пожалуйста">
-    </form>
-  </div>
-  <div class="device">
-    <div class=wrap>
-      <span>С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</span>
+  </div>     
+</section>
+
+<div class="contact">
+  <div class="application-mistake">
+    <section class="mistake-content">
+      <h3 class="mistake-title">Что-то пошло не так</h3>
+      <p class="mistake-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </section>
+    <div class="close-mistake-modal">
+      <input class="btn-mistake-application" type="submit" value="Ok">
     </div>
-    <form>
-      <div class="wrapper">
-        <input type="radio" id="r1" name="rr" checked/>
-        <label for="r1"><span></span>Pink для iOS</label>
-      </div>
-      <div class="wrapper">
-        <input type="radio" id="r2" name="rr"/>
-        <label for="r2"><span></span>Pink для Android</label>
-      </div>
-      <div class="wrapper">
-        <input type="radio" id="r3" name="rr" />
-        <label for="r3"><span></span>Windows Phone</label>
-      </div>      
-    </form>
   </div>
+  <div class="container">
+    <form class="your-contact" action="#" name="user-contact">
+    <label class="tel-title" for="user-tel">Номерок телефончика</label>
+    <input class="tel-input" type="text" id="user-tel" name="user-tel" placeholder="Hомер, пожалуйста">
+    <label class="mail-title" for="user-mail">Адресок почты</label>
+    <input class="mail-input" type="text" id="user-mail" name="user-mail" placeholder="Email, пожалуйста">
+  </form>
+  </div> 
+</div>
+
+<div class="devices">
+  <div class="application-send">
+    <section class="application-content">
+      <h3 class="application-title">Ваша заявка отправлена</h3>
+      <p class="application-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
+оповестим вас.</p>
+    </section>
+    <div class="close-modal">
+      <input class="btn-application" type="submit" value="Закрыть окно">
+    </div>
+  </div>
+  <h3 class="devices-title">С каким приложением путешествовали?</h3>
+  <form class="choose-device">
+    <div class="wrap-device">
+      <input class="radio-check" type="radio" id="r1" name="rr" checked/>
+      <label class="radio-label" for="r1">
+        <span class="radio-dot">Выбрать</span>
+        Pink для iOS
+      </label>
+    </div>
+    <div class="wrap-device">
+      <input class="radio-check" type="radio" id="r2" name="rr"/>
+      <label class="radio-label" for="r2">
+        <span class="radio-dot">Выбрать</span>
+        Pink для Android
+      </label>
+    </div>
+    <div class="wrap-device">
+      <input class="radio-check" type="radio" id="r3" name="rr" />
+      <label class="radio-label" for="r3">
+        <span class="radio-dot">Выбрать</span>
+        Windows Phone
+      </label>
+    </div>      
+  </form> 
+</div>
+
   <div class="opinion">
-    <div class=wrap>
-      <span>ОПИШИТЕ СВОИ ЭМОЦИИ</span>
-    </div>
-    <form>
-      <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"> </textarea>
-      <input type="submit" value="Отправить">
-    </form>
-    <div class="wrapper">
-      <span>*</span>
-      <span> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</span>
+    <div class="container">
+      <h3 class="opinion-title">Опишите свои эмоции</h3>  
+      <form class="your-opinion">
+        <textarea class="opinion-content" placeholder="Можно прям в красках, не стесняясь в выражениях"> </textarea>
+        <input class="btn-opinion" type="submit" value="Отправить">
+      </form>
+      <div class="additionally">
+        <span class="star">*</span>
+        <span class="necessarily-field"> - Обязательные поля</span>
+      </div>
     </div>
   </div>
-  <div class="footer">
-    <div class="logo-footer">
-      <a href=#>
-        <img src="img/logo.png">
+
+</main>
+
+<footer class="footer-form">
+  <div class="logo-footer">
+    <a class="logo-link-form" href=#>
+      <img src="svg/logo-blue-tablet.svg" alt="Логотип сайта">
+    </a>
+  </div>
+  <div class="social">
+    <div class="circle">
+      <a class="link-tw" href=#>
+        <img class="icon-tw" src="svg/twitter.svg" alt="Твиттер">
       </a>
     </div>
-    <div class="social">
-      <div class="circle">
-        <a class="tw" href=#>
-          <img src="img/icon-tw.png">
-        </a>
-      </div>
-      <div class="circle">
-        <a class="fb" href=#>
-          <img src="img/icon-fb.png">
-        </a>
-      </div>
-      <div class="circle">
-        <a class="yt" href=#>
-          <img src="img/icon-yt.png">
-        </a>
-      </div>
+    <div class="circle">
+      <a class="link-fb" href=#>
+        <img class="icon-fb" src="svg/facebook.svg" alt="Фейсбук">
+      </a>
     </div>
-    <div class="author"> 
-      <span>Разработано </span>
-      <a class="html-academy" href=#>
-          <img src="img/icon-htmlacademy.png">
+    <div class="circle">
+      <a class="link-yt" href=#>
+        <img class="icon-yt" src="svg/youtube.svg" alt="Ютьюб">
       </a>
     </div>
   </div>
+  <div class="author"> 
+    <span class="author-title">Разработано </span>
+    <a class="link-html-academy-form" href=#>
+        <img class="author-img" src="svg/htmlacademy.svg" alt="Логотип html-academy">
+    </a>
+  </div>
+</footer>
+
 </body>
 </html>

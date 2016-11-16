@@ -1,49 +1,225 @@
-.info {
+@media (min-width: 200px) and (max-width: 699px) {
+.tablet-logo-svg {
+  display: none;
+}
+
+.desktop-logo-svg {
+  display: none;
+}
+
+.mobile-logo-svg {
+  display: inline-block;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.page-header {
   width: 100%;
-  height: 235px;
-  background-image: url(../img/bg-4.jpg);
-  text-align: center;
+  height: 240px;
+  background: url(../img/bg-1.jpg) no-repeat 50% 0;
 }
+
+.top-header {
+  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.show-navigation .top-header {
+  background: #283645;
+  opacity: 1;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+.show-navigation .menu {
+  display: block;
+  border-top: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 63px;
+}
+
+.show-navigation .menu-burger {
+  display: none;
+}
+
+.show-navigation .icon-close {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.show-navigation .logo {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
 .logo {
-  float:left;
-  margin-left:20px;
-  margin-top: 21.5px;
+  display: inline-block;
 }
+
+.logo-title {
+  font-size: 1.5em;
+  margin: 0;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.header-navigation {
+  display: inline-block;
+}
+
 .menu-burger {
-  margin-right: 20px;
-  float:right;
-  margin-top: 20.5px;
+  display: inline-block;
+  height: 24px;
+  width: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
-.info .wrap{
-  padding: 100px 45px 0;  
+
+.strip-menu {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
-.info span{
-  font-size: 24px;
-  font-family: "Open Sans";
-  color: rgb(255, 255, 255);
-  line-height: 30px;
+
+.menu-burger:after,
+.menu-burger:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 1;
 }
-.fio {
+
+.menu  {
+  background: #283645;
+  display: none;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
   text-align: center;
+}
+
+.menu-link {
+  display: block;
+  margin-right:  0;
+}
+
+.menu .menu-item {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 0;
+}
+
+.icon-close {
+  display: none;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.icon-close::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.icon-close::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(45deg);
+  font-size: 0;
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+
+.contect {
+  width: 235px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.share-story {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.fio {
+  padding-bottom: 30px;
 }
 .fio .wrap{
   padding: 50px 25px 0;
 }
-.fio span{
-  font-size: 14px;
-  font-family: "Open Sans";
-  color: rgb(40, 54, 69);
-  line-height: 30px; 
-}
-.fio form{
-  margin-top: 35px;
-  padding: 0px 20px;
-}
-.fio label,
-.fio input{
+
+.label-name,
+.label-surname,
+.label-middlename {
   display: block;
-}
-.fio label{
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
@@ -52,46 +228,56 @@
   line-height: 30px;
   margin-bottom: 10px;
 }
-.fio input{
-  width: 253px;
-  height: 56px;
+
+.input-name,
+.input-surname,
+.input-middlename{
+  width: 90%;
   font-size: 18px;
   font-family: "Open Sans";
   line-height: 30px;
   margin-bottom: 20px;
   padding-left: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
  input::-webkit-input-placeholder {color:#283645; }
  input::-moz-placeholder          {color:#283645;}/* Firefox 19+ */
  input:-moz-placeholder           {color:#283645;}/* Firefox 18- */
  input:-ms-input-placeholder      {color:#283645;}
+
 .achievements{
   background: #f2f2f2;
+  padding-top: 35px;
 }
-.achievements .wrap{
+
+.achievements-title{
   text-align: center;
-  padding: 40px 50px;
-}
-.achievements .wrap span,
-.device .wrap span{
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
   line-height: 18px;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: 400;  
 }
-.achievements form{
-  padding-left: 20px;
-}
-.achievements input[type="checkbox"]{
+
+.check {
   display: none;  
 }
-.achievements label{
+
+.label-checkbox{
   font-size: 18px;
   font-family: "Open Sans";
   color: rgb(40, 54, 69);
   line-height: 30px;
 }
-input[type=checkbox] + label span{
+
+.tisk {
   display: inline-block;
   content: "";
   width: 37px;
@@ -99,65 +285,193 @@ input[type=checkbox] + label span{
   background: #fff;
   border: 2px solid #e5e5e5;
   vertical-align: bottom;
-  margin-right: 30px;
+  margin-right: 25px;
   cursor:pointer;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent
 }
-.achievements input[type=checkbox]:checked +label span {
-  background: #fff url(../img/icon-yes.png) no-repeat center;
+
+.check:checked + .label-checkbox .tisk {
+  background: #fff url(../img/tisk.png) no-repeat center;
 }
-.achievements .wrapper{
+
+
+.wrap-achivment{
   line-height: 39px;
   display: block;
   height: 39px;
   padding-bottom: 44px;
 }
+
 .contact {
-  padding: 35px 20px 30px;
+  padding: 35px 0 30px;
+  position: relative;
 }
-.contact label{
+
+
+.mistake-content {
+  padding: 40px 0;
+}
+
+.show-mistake .application-mistake {
+  display: block;
+  position: absolute; 
+  left: 0;
+  top: -217px;
+}
+
+.application-mistake {
+  box-shadow: 0 15px 30px  -15px #333;
+  display: none;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+
+}
+
+.mistake-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.close-mistake-modal {
+  padding-bottom: 50px;
+}
+
+.btn-mistake-application {
+  width: 90%;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #2aab6d;
+  border: 0;
+  border-radius: 2px;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+
+.tel-title,
+.mail-title {
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
   text-align: left;
   margin-left: 23px;
   line-height: 30px;
+  text-transform: uppercase;
   margin-bottom: 10px;
+  display: block;
 }
-.contact input{
-  width: 253px;
-  height: 56px;
+
+.tel-input,
+.mail-input {
+  width: 90%;
+  padding: 10px 0;
   font-size: 18px;
   font-family: "Open Sans";
   line-height: 30px;
   margin-bottom: 25px;
   padding-left: 21px;
 }
-.device{
+
+.devices {
   background: #f2f2f2;
+  position: relative;
 }
-.device .wrap {
+
+.application-content {
+  padding: 40px 0;
+}
+
+.show-application .application-send {
+  display: block;
+  position: absolute; 
+  left: 0;
+  top: 0;
+}
+
+.application-send {
+  box-shadow: 0 15px 30px  -15px #333 , 0 -10px 20px  -15px #333;
+  display: none;
+  width: 100%;
+  background: #fff;
   text-align: center;
-  padding: 35px 70px;
+
 }
-.device .wrapper{
+
+.application-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.close-modal {
+  background: #f2f2f2;
+  padding: 50px 0;
+}
+
+.btn-application {
+  width: 90%;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: #2aab6d;
+  border: 0;
+  border-radius: 2px;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.devices-title{
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(210, 40, 86);
+  line-height: 18px;
+  width: 230px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.choose-device {
+  padding-left: 20px;
+}
+
+.wrap-device{
   line-height: 39px;
   display: block;
   height: 37px;
   padding-bottom: 40px;
 }
-.device form{
-  padding-left: 20px;
-}
-.device input[type="radio"]{
+
+.radio-check {
   display: none;  
 }
-.device label{
+
+.radio-label {
   font-size: 18px;
   font-family: "Open Sans";
   color: rgb(40, 54, 69);
   line-height: 30px;
 }
-input[type=radio] + label span{
+
+.radio-dot{
   display: inline-block;
   content: "";
   width: 37px;
@@ -168,30 +482,44 @@ input[type=radio] + label span{
   vertical-align: bottom;
   margin-right: 30px;
   cursor:pointer;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent
 }
-.device input[type=radio]:checked + label span {
-  background: #fff url(../img/icon-dot.png) no-repeat center;
+
+.radio-check:checked ~ .radio-label .radio-dot {
+  background: #fff url(../img/dot.png) no-repeat center;
 }
+
 .opinion{
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 60px;
 }
-.opinion .wrap span{
+
+.opinion-title{
+  text-align: center;
   font-size: 14px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   color: rgb(210, 40, 86);
-  line-height: 30px;
+  line-height: 18px;
+  width: 230px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
+
 .opinion .wrap{
 padding: 55px 65px 15px;
 text-align: center;
 }
-.opinion form{
-  padding: 0 20px;
-}
-.opinion textarea{
+
+.opinion-content {
   margin-bottom:  50px;
-  width: 275px;
+  width: 90%;
   height: 200px;
   font-size: 18px;
   font-family: "OpenSans";
@@ -202,7 +530,8 @@ textarea::-webkit-textarea-placeholder {color:#283645; }
 textarea::-moz-placeholder          {color:#283645;}/* Firefox 19+ */
 textarea:-moz-placeholder           {color:#283645;}/* Firefox 18- */
 textarea:-ms-textarea-placeholder      {color:#283645;}
-.opinion input[type="submit"]{
+
+.btn-opinion {
   width: 100%;
   height: 60px;
   margin-bottom: 40px;
@@ -214,26 +543,38 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   line-height: 30px;
   border-radius: 2px;
 }
-.opinion .wrapper span:nth-child(2){
+
+.necessarily-field {
   font-size: 14px;
   font-family: "Open Sans";
   line-height: 30px;
 }
-.opinion .wrapper span:first-child{
+
+.star {
   color: rgb(210, 40, 86);
 }
-.footer{
-margin-top:40px;
-}
-.footer .logo-footer{
+
+.footer-form {
+  margin-top: 20px;
   margin-bottom: 40px;
-  text-align: center;
 }
-.footer .social{
+
+.logo-footer{
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.social{
   display: block;
-  margin: 0 65px 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-bottom: 35px;
 }
-.footer .circle{
+
+.circle{
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -242,37 +583,52 @@ margin-top:40px;
   vertical-align: bottom;
   margin-right: 12px;
 }
-.footer .circle:last-child{
+
+.circle:last-child{
   margin-right: 0;
 }
-.footer .circle:first-child img{
-  margin-left: 13.5px;
-  margin-top: 15.5px;
+
+.link-tw,
+.link-fb,
+.link-yt,
+.logo-link-form,
+.link-html-academy-form {
+  display:  inline-block;
 }
-.footer .circle:nth-child(2) img{
-  margin-left: 18px;
-  margin-top: 13.5px;
+
+.icon-tw {
+  padding: 15.5px 13.5px;
 }
-.footer .circle:nth-child(3) img{
-  margin-left: 15px;
-  margin-top: 16px;
+
+.icon-fb {
+  padding: 13.5px 18px;
 }
-.author{
-  margin: 0 90px 45px;
-  text-align: center;
+
+.icon-yt {
+  padding: 16px 15px;
 }
-.author img{
-  vertical-align: bottom;
-  margin-left: 15px;
+
+.author {
+  margin-left: auto;
+  margin-right: auto;
+  width: 145px;
 }
-.author span{
+
+.author-title {
+  vertical-align: middle;
+  margin-right: 12px;
+  
+}
+
+.author-img {
+  vertical-align: middle;  
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(40, 54, 69);
   line-height: 34px;
 }
 
-
+}
 
 
 
