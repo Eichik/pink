@@ -266,6 +266,11 @@
   font-weight: 400;  
 }
 
+.your-achievements{
+  padding-left: 20px;
+
+}
+
 .check {
   display: none;  
 }
@@ -287,7 +292,7 @@
   vertical-align: bottom;
   margin-right: 25px;
   cursor:pointer;
-  border: 0;
+  
   font: 0/0 a;
   text-shadow: none;
   color: transparent
@@ -310,6 +315,13 @@
   position: relative;
 }
 
+.contact-title {
+  display: none;
+}
+
+.your-contact {
+  padding-left: 20px;
+}
 
 .mistake-content {
   padding: 40px 0;
@@ -329,6 +341,14 @@
   background: #fff;
   text-align: center;
 
+}
+
+.mistake-title {
+  font-size: 30px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 .mistake-text {
@@ -369,6 +389,11 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
+}
+
+.tel-title-tablet,
+.mail-title-tablet {
+  display: none;
 }
 
 .tel-input,
@@ -512,6 +537,11 @@
   font-weight: 400;
 }
 
+.your-opinion {
+  margin: 0 20px;
+}
+
+
 .opinion .wrap{
 padding: 55px 65px 15px;
 text-align: center;
@@ -519,7 +549,7 @@ text-align: center;
 
 .opinion-content {
   margin-bottom:  50px;
-  width: 90%;
+  width: 100%;
   height: 200px;
   font-size: 18px;
   font-family: "OpenSans";
@@ -544,6 +574,14 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   border-radius: 2px;
 }
 
+.wrap-additionally-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 190px;
+  
+}
+
 .necessarily-field {
   font-size: 14px;
   font-family: "Open Sans";
@@ -555,7 +593,7 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 }
 
 .footer-form {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -630,6 +668,11 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 
 }
 
+/*///////////////////////////Таблетка//////////////////////*/
+/*///////////////////////////Таблетка//////////////////////*/
+/*///////////////////////////Таблетка//////////////////////*/
+/*///////////////////////////Таблетка//////////////////////*/
+
 @media (min-width: 700px) and (max-width: 1199px) {
 
 .container {
@@ -665,7 +708,7 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 }
 
 .top-header {
-  padding: 40px;
+  padding: 27px 40px 40px;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
 }
@@ -693,7 +736,7 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   display: inline-block;
   position: absolute;
   top: 40px;
-  right: 0;
+  right: 20px;
 }
 
 .show-navigation .logo {
@@ -714,6 +757,18 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   color: transparent;
 }
 
+.mobile-logo-svg {
+  display: none;
+}
+
+.tablet-logo-svg {
+  display: inline-block;
+}
+
+.desktop-logo-svg {
+  display: none;
+}
+
 .header-navigation {
   display: inline-block;
 }
@@ -725,7 +780,7 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   opacity: 1;
   position: absolute;
   top: 40px;
-  right: 20px;
+  right: 40px;
   border: 0;
   font: 0/0 a;
   text-shadow: none;
@@ -762,21 +817,21 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   text-align: center;
 }
 
-.menu-link {
-  display: block;
-  margin-right:  0;
-}
-
 .menu .menu-item {
   border-bottom: 1px solid #000;
   border-top: 1px solid #485461;
   font-size: 18px;
   line-height: 32px;
   font-family: "Open Sans";
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   padding: 14px 0;
+}
+
+.menu-link {
+  display: block;
+  margin-right:  0;
 }
 
 .icon-close {
@@ -789,6 +844,7 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   text-shadow: none;
   color: transparent;
 }
+
 
 .icon-close::before {
   content: "";
@@ -884,8 +940,12 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
  input:-ms-input-placeholder      {color:#283645;}
 
 .achievements{
-  background: #f2f2f2;
+  background: #fff;
   padding-top: 35px;
+  border: 2px solid #e5e5e5;
+  margin: 0 40px;
+  position: relative;
+  margin-bottom: 65px;
 }
 
 .achievements-title{
@@ -893,13 +953,24 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
-  line-height: 18px;
-  width: 230px;
+  line-height: 30px;
+  width: 380px;
   margin-left: auto;
   margin-right: auto; 
   margin-bottom: 35px;
   text-transform: uppercase;
   font-weight: 400;  
+  position: absolute;
+  left: 50%;
+  top: -31px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 30px;
+}
+
+.your-achievements{
+  padding-left: 55px;
+
 }
 
 .check {
@@ -923,7 +994,6 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   vertical-align: bottom;
   margin-right: 25px;
   cursor:pointer;
-  border: 0;
   font: 0/0 a;
   text-shadow: none;
   color: transparent
@@ -942,10 +1012,38 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 }
 
 .contact {
-  padding: 35px 0 30px;
   position: relative;
+  background: #fff;
+  padding-top: 35px;
+  border: 2px solid #e5e5e5;
+  margin: 0 40px;
+  margin-bottom: 55px;
 }
 
+.contact-title {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(210, 40, 86);
+  line-height: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: 400;  
+  position: absolute;
+  left: 50%;
+  top: -31px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 30px;
+
+}
+
+.your-contact {
+  padding-left: 55px;
+}
 
 .mistake-content {
   padding: 40px 0;
@@ -954,25 +1052,42 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 .show-mistake .application-mistake {
   display: block;
   position: absolute; 
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: -217px;
+  z-index: 10;
+  
 }
 
 .application-mistake {
   box-shadow: 0 15px 30px  -15px #333;
   display: none;
-  width: 100%;
+  padding: 0 80px;
   background: #fff;
   text-align: center;
+  width: 305px;
+  
 
 }
 
+.mistake-title {
+  font-size: 30px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .mistake-text {
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Open Sans";
   color: #000;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
 }
 
 .close-mistake-modal {
@@ -996,6 +1111,11 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 
 .tel-title,
 .mail-title {
+  display: none;
+}
+
+.tel-title-tablet,
+.mail-title-tablet {
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
@@ -1003,61 +1123,85 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   margin-left: 23px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   display: block;
 }
 
 .tel-input,
 .mail-input {
   width: 90%;
-  padding: 10px 0;
+  padding: 13px 0;
   font-size: 18px;
   font-family: "Open Sans";
   line-height: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   padding-left: 21px;
 }
 
 .devices {
-  background: #f2f2f2;
+  background: #fff;
   position: relative;
+  margin-bottom: 30px;
+  padding-top: 35px;
+  border: 2px solid #e5e5e5;
+  margin: 0 40px;
+  margin-bottom: 55px;
+  
+  
+  
+  
 }
 
 .application-content {
-  padding: 40px 0;
+  padding: 40px 77px;
 }
 
 .show-application .application-send {
   display: block;
   position: absolute; 
-  left: 0;
+  left: 50%;
   top: 0;
+  z-index: 15;
+  transform: translateX(-50%);
+   
 }
 
 .application-send {
   box-shadow: 0 15px 30px  -15px #333 , 0 -10px 20px  -15px #333;
   display: none;
-  width: 100%;
   background: #fff;
   text-align: center;
+  width: 465px;
 
 }
 
+.application-title {
+  font-size: 30px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .application-text {
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Open Sans";
   color: #000;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
 }
 
 .close-modal {
   background: #f2f2f2;
-  padding: 50px 0;
+  padding: 40px 80px;
 }
 
 .btn-application {
-  width: 90%;
+  width: 100%;
   font-size: 18px;
   font-family: "Open Sans";
   color: #fff;
@@ -1075,18 +1219,23 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
-  line-height: 18px;
-  width: 230px;
-  padding-top: 40px;
+  line-height: 30px;
+  width: 325px;
   margin-left: auto;
   margin-right: auto; 
   margin-bottom: 35px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;  
+  position: absolute;
+  left: 50%;
+  top: -31px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 30px;
 }
 
 .choose-device {
-  padding-left: 20px;
+  padding-left: 55px;
 }
 
 .wrap-device{
@@ -1118,7 +1267,6 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   vertical-align: bottom;
   margin-right: 30px;
   cursor:pointer;
-  border: 0;
   font: 0/0 a;
   text-shadow: none;
   color: transparent
@@ -1130,7 +1278,11 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 
 .opinion{
   text-align: center;
-  padding-top: 60px;
+  padding-top: 50px;
+  border: 2px solid #e5e5e5;
+  margin: 0 40px;
+  margin-bottom: 55px;
+  position: relative;
 }
 
 .opinion-title{
@@ -1138,37 +1290,48 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(210, 40, 86);
-  line-height: 18px;
-  width: 230px;
-  margin-top: 0;
+  line-height: 30px;
+  width: 190px;
   margin-left: auto;
   margin-right: auto; 
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 400;  
+  position: absolute;
+  left: 50%;
+  top: -31px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 30px;
+}
+
+.your-opinion {
+  margin: 0 55px;
 }
 
 .opinion .wrap{
-padding: 55px 65px 15px;
-text-align: center;
+  padding: 55px 65px 15px;
+  text-align: center;
 }
 
 .opinion-content {
   margin-bottom:  50px;
-  width: 90%;
+  width: 100%;
   height: 200px;
   font-size: 18px;
   font-family: "OpenSans";
   color: rgb(210, 40, 86);
   line-height: 30px;
 }
+
 textarea::-webkit-textarea-placeholder {color:#283645; }
 textarea::-moz-placeholder          {color:#283645;}/* Firefox 19+ */
 textarea:-moz-placeholder           {color:#283645;}/* Firefox 18- */
 textarea:-ms-textarea-placeholder      {color:#283645;}
 
 .btn-opinion {
-  width: 100%;
+  width: 300px;
+  float: left;
   height: 60px;
   margin-bottom: 40px;
   background: #2aab6d;
@@ -1180,13 +1343,21 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
   border-radius: 2px;
 }
 
+.wrap-additionally-text {
+  float: right;
+  
+}
+
 .necessarily-field {
   font-size: 14px;
   font-family: "Open Sans";
+  display: inline-block;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .star {
+  display: inline-block;
   color: rgb(210, 40, 86);
 }
 
@@ -1197,13 +1368,15 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 
 .logo-footer{
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   width: 150px;
+  float: left;
+  padding-left: 40px;
+  
 }
 
 .social{
-  display: block;
+  float: left;
+  padding-left: 75px;  
   margin-left: auto;
   margin-right: auto;
   width: 200px;
@@ -1245,8 +1418,8 @@ textarea:-ms-textarea-placeholder      {color:#283645;}
 }
 
 .author {
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
+  padding-right: 40px;
   width: 145px;
 }
 

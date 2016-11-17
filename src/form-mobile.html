@@ -63,7 +63,7 @@
 </div>
 
 <section class="achievements"> 
-  <div class="container">
+  <!--<div class="container">-->
     <h3 class="achievements-title">Ваши безбашенные достижения в путешествии</h3>
     <form class="your-achievements">
       <div class="wrap-achivment">
@@ -109,27 +109,32 @@
         </label>
       </div>      
     </form>
-  </div>     
+  <!--</div>     -->
 </section>
 
 <div class="contact">
   <div class="application-mistake">
     <section class="mistake-content">
-      <h3 class="mistake-title">Что-то пошло не так</h3>
+      <h3 class="mistake-title">Что-то пошло не так!</h3>
       <p class="mistake-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </section>
     <div class="close-mistake-modal">
       <input class="btn-mistake-application" type="submit" value="Ok">
     </div>
   </div>
-  <div class="container">
+  
+    <h3 class="contact-title">Контактная информация</h3>    
     <form class="your-contact" action="#" name="user-contact">
-    <label class="tel-title" for="user-tel">Номерок телефончика</label>
+    <label class="tel-title" for="user-tel">Номер телефона</label>
     <input class="tel-input" type="text" id="user-tel" name="user-tel" placeholder="Hомер, пожалуйста">
+    <label class="tel-title-tablet" for="user-tel">Номерок телефончика</label>
+    
     <label class="mail-title" for="user-mail">Адресок почты</label>
     <input class="mail-input" type="text" id="user-mail" name="user-mail" placeholder="Email, пожалуйста">
+    <label class="mail-title-tablet" for="user-tel">Адрес почты</label>
+    
   </form>
-  </div> 
+  
 </div>
 
 <div class="devices">
@@ -170,22 +175,24 @@
 </div>
 
   <div class="opinion">
-    <div class="container">
-      <h3 class="opinion-title">Опишите свои эмоции</h3>  
-      <form class="your-opinion">
-        <textarea class="opinion-content" placeholder="Можно прям в красках, не стесняясь в выражениях"> </textarea>
-        <input class="btn-opinion" type="submit" value="Отправить">
-      </form>
-      <div class="additionally">
-        <span class="star">*</span>
-        <span class="necessarily-field"> - Обязательные поля</span>
-      </div>
-    </div>
+    <h3 class="opinion-title">Опишите свои эмоции</h3>  
+    <form class="your-opinion">
+      <textarea class="opinion-content" placeholder="Можно прям в красках, не стесняясь в выражениях"> </textarea>
+    </form>
   </div>
 
+<div class="additionally clearfix">
+  <div class="container">
+    <input class="btn-opinion" type="submit" value="Отправить">
+    <div class="wrap-additionally-text">
+      <span class="star">*</span>
+      <span class="necessarily-field"> - Обязательные поля</span>
+    </div>
+  </div>
+</div>
 </main>
 
-<footer class="footer-form">
+<footer class="footer-form clearfix">
   <div class="logo-footer">
     <a class="logo-link-form" href=#>
       <img src="svg/logo-blue-tablet.svg" alt="Логотип сайта">

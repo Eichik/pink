@@ -16,7 +16,7 @@ gulp.task('serve', function () {
     browserSync.init({
         server: {
             baseDir: "src",
-            index: "index.html"
+            index: "form-mobile.html"
         }
     });
 
